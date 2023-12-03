@@ -20,25 +20,28 @@ export default function Home() {
       <main className="mx-auto lg:w-3/4 2xl:w-2/3">
         {/* ------------------------------------NAVBAR------------------------------------ */}
         <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-900">
-          <Link href="/" className="pl-4 text-2xl text-zinc-200 font-semibold">
-            daniel <span className="text-red-600">j.</span>
+          <Link
+            href="/"
+            className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
+          >
+            daniel <span className="text-red-600 hover:text-red-400">j.</span>
           </Link>
           <div className="hidden md:flex md:justify-end">
             <Link
               href="#"
-              className="pr-2 text-2xl text-zinc-200 font-semibold"
+              className="pr-2 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
             >
               projects
             </Link>
             <Link
               href="#"
-              className="px-10 text-2xl text-zinc-200 font-semibold"
+              className="px-10 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
             >
               blog
             </Link>
             <Link
               href="#"
-              className="pr-8 text-2xl text-zinc-200 font-semibold"
+              className="pr-8 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
             >
               contact
             </Link>
@@ -57,15 +60,21 @@ export default function Home() {
             <button onClick={toggleSidebar} className="mb-4">
               <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
             </button>
-            <Link href="#" className="text-6xl py-4 text-zinc-200 font-bold">
+            <Link
+              href="#"
+              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-white font-bold"
+            >
               projects
             </Link>
-            <Link href="#" className="text-6xl py-4 text-zinc-200 font-bold">
+            <Link
+              href="#"
+              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-white font-bold"
+            >
               blog
             </Link>
             <Link
               href="#"
-              className="text-6xl py-4 pb-10 text-zinc-200 font-bold"
+              className="text-6xl py-4 pb-10 text-zinc-200 transition-colors hover:text-white font-bold"
             >
               contact
             </Link>
@@ -93,7 +102,7 @@ export default function Home() {
               Got an <span className="text-red-600">idea?</span>
             </div>
             <div className="py-1" />
-            <button className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+            <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-white py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
               Get In Touch
             </button>
           </div>
@@ -108,9 +117,9 @@ export default function Home() {
               Born & Based in
             </div>
             <div className="py-1" />
-            <button className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+            <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
               The Bay Area
-            </button>
+            </div>
           </div>
           {/*End Born and Based Card*/}
           <div className="p-2" />
@@ -119,7 +128,7 @@ export default function Home() {
               {/*LinkedIn Card*/}
               <Link
                 href="https://www.linkedin.com/in/oconnorjohnson"
-                className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-900 transition-colors hover:bg-zinc-800 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
               >
                 <FaLinkedin className="pr-2 text-3xl" />
                 <div>LinkedIn</div>
@@ -129,7 +138,7 @@ export default function Home() {
               {/*Github Card*/}
               <Link
                 href="https://www.github.com/oconnorjohnson"
-                className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-zinc-800 text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
               >
                 <FaGithubSquare className="pr-2 text-3xl" />
                 <div>Github</div>
