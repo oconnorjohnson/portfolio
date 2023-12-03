@@ -30,19 +30,13 @@ export default function Home() {
           <div className="hidden md:flex md:justify-end">
             <Link
               href="#"
-              className="pr-2 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
-            >
-              projects
-            </Link>
-            <Link
-              href="#"
-              className="px-10 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
-            >
-              blog
-            </Link>
-            <Link
-              href="#"
               className="pr-8 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
+            >
+              works
+            </Link>
+            <Link
+              href="#"
+              className="pr-4 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
             >
               contact
             </Link>
@@ -65,13 +59,7 @@ export default function Home() {
               href="#"
               className="text-6xl py-4 text-zinc-200 transition-colors hover:text-white font-bold"
             >
-              projects
-            </Link>
-            <Link
-              href="#"
-              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-white font-bold"
-            >
-              blog
+              works
             </Link>
             <Link
               href="#"
@@ -148,17 +136,16 @@ export default function Home() {
             </div>
             <div className="py-2" />
             {/*About Card*/}
-            <div className="bg-zinc-900 rounded-3xl p-10 md:p-10">
-              <div className="text-2xl text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
-                I currently work with Typescript, React, Next, PostgreSQL &
-                Tailwind CSS. However, more than anything,{" "}
+            <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
+              <div className="text-2xl text-start md:text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
+                I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
                 <span className="text-red-600">
                   I love learning new languages.{" "}
                 </span>{" "}
-                Right now, I&apos;m studying Swift, Objective-C, Spanish &
+                I&apos;m currently studying Swift, Objective-C, Spanish &
                 French.
               </div>
-              <div className="text-3xl text-end md:text-4xl leading-tight font-semibold text-zinc-200">
+              <div className="text-3xl text-start md:text-end md:text-4xl leading-tight font-semibold text-zinc-200">
                 Let&apos;s build robust and *accessible* solutions at the speed
                 of light.
               </div>
@@ -172,7 +159,7 @@ export default function Home() {
         <div className="flex flex-row">
           {/*Testimonial Card*/}
           <div className="px-2 md:hidden" />
-          <div className="p-6 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
+          <div className="p-10 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
             <div className="flex flex-col-3">
               {/* <div className="flex flex-col justify-center">
               <MdArrowBackIos />
@@ -220,17 +207,17 @@ export default function Home() {
         <div className="py-2" />
 
         {/* ------------------------------------PROJECTS------------------------------------ */}
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row px-4 md:px-0">
           {/*PocketPR Card*/}
           <Link href="/">
             <div className="flex flex-col bg-zinc-900 hover:bg-zinc-800 rounded-3xl p-12">
               <div className="flex flex-row">
                 <div className="flex flex-col">
-                  <h1 className="font-semibold text-zinc-200 text-4xl">
+                  <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
                     PocketPR
                   </h1>
-                  <h2 className="font-ultralight text-zinc-400 text-xl">
-                    Co-Founder
+                  <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                    Co-Founder & CEO
                   </h2>
                 </div>
               </div>
@@ -247,7 +234,7 @@ export default function Home() {
           <div className="px-2" />
           <div className="py-2 md:hidden" />
           {/*Projects & Blog Grid*/}
-          <div className="grid grid-cols-2 gap-4 md:w-2/3">
+          <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
             <Link href="/">
               <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
                 {/* Card 1 content */}
