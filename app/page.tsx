@@ -24,7 +24,8 @@ export default function Home() {
             href="/"
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
-            daniel <span className="text-red-600 hover:text-red-400">j.</span>
+            daniel{" "}
+            <span className="text-red-600 hover:text-red-400 pl-0.5"> j.</span>
           </Link>
           <div className="hidden md:flex md:justify-end">
             <Link
@@ -214,11 +215,63 @@ export default function Home() {
             </div>
           </div>
           <div className="px-2 md:hidden" />
-          {/*Testimonial Card*/}
+          {/*End Testimonial Card*/}
         </div>
         <div className="py-2" />
 
         {/* ------------------------------------PROJECTS------------------------------------ */}
+        <div className="flex flex-row">
+          {/*PocketPR Card*/}
+          <Link href="/">
+            <div className="flex flex-col bg-zinc-900 hover:bg-zinc-800 rounded-3xl p-12">
+              <div className="flex flex-row">
+                <div className="flex flex-col">
+                  <h1 className="font-semibold text-zinc-200 text-4xl">
+                    PocketPR
+                  </h1>
+                  <h2 className="font-ultralight text-zinc-400 text-xl">
+                    Co-Founder
+                  </h2>
+                </div>
+              </div>
+              <Image
+                height="250"
+                width="500"
+                alt="pocketpr screenshot"
+                className="rounded-3xl"
+                src="/pocketpr.png"
+              />
+            </div>
+          </Link>
+          {/*End PocketPR Card*/}
+          <div className="px-2" />
+          <div className="py-2 md:hidden" />
+          {/*Projects & Blog Grid*/}
+          <div className="grid grid-cols-2 gap-4 md:w-2/3">
+            <Link href="/">
+              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+                {/* Card 1 content */}
+              </div>
+            </Link>
+            <Link href="/">
+              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+                {/* Card 2 content */}
+              </div>
+            </Link>
+            <Link href="/">
+              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+                {/* Card 3 content */}
+              </div>
+            </Link>
+            <Link href="/">
+              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+                {/* Card 4 content */}
+              </div>
+            </Link>
+          </div>
+          {/*End Projects & Blog Grid Card*/}
+        </div>
+        <div className="py-2" />
 
         {/* ------------------------------------BLOG-CAROUSEL------------------------------------ */}
 
