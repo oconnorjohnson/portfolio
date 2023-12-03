@@ -68,9 +68,22 @@ export default function Home() {
               Got an idea?
             </div>
             <div className="py-1" />
-            <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-4 rounded-3xl leading-tight font-semibold text-zinc-900">
+            <button className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-semibold text-zinc-900">
               Get in touch.
-            </div>
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between px-4 md:px-0">
+          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            LinkedIn
+          </div>
+          <div className="px-2" />
+          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            Github
+          </div>
+          <div className="px-2" />
+          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            Twitter
           </div>
         </div>
       </main>
