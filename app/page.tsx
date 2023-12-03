@@ -3,6 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -73,17 +76,20 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-between px-4 md:px-0">
-          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            LinkedIn
+        <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
+          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            <FaLinkedin className="pr-2 text-3xl" />
+            <div>LinkedIn</div>
           </div>
           <div className="px-2" />
-          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            Github
+          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            <FaGithubSquare className="pr-2 text-3xl" />
+            <div>Github</div>
           </div>
           <div className="px-2" />
-          <div className="text-center px-40 text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            Twitter
+          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
+            <FaTwitter className="pr-2 text-3xl" />
+            <div>Twitter</div>
           </div>
         </div>
       </main>
