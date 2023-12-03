@@ -5,7 +5,7 @@ import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -94,27 +94,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ------------------------------------SOCIALS------------------------------------ */}
-        <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
-          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            <FaLinkedin className="pr-2 text-3xl" />
-            <div>LinkedIn</div>
-          </div>
-          <div className="py-2 px-0 md:py-0 md:px-2" />
-          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            <FaGithubSquare className="pr-2 text-3xl" />
-            <div>Github</div>
-          </div>
-          <div className="py-2 px-0 md:py-0 md:px-2" />
-          <div className="flex flex-row justify-center text-2xl font-extralight text-zinc-200 bg-zinc-900 rounded-3xl py-6 w-full">
-            <FaTwitter className="pr-2 text-3xl" />
-            <div>Twitter</div>
-          </div>
-        </div>
-
         {/* ------------------------------------ABOUT------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
-          <div className="bg-zinc-900 my-4 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
+          <div className="bg-zinc-900 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
               Born & Based in
             </div>
@@ -124,23 +106,58 @@ export default function Home() {
             </button>
           </div>
           <div className="px-2" />
-          <div className="bg-zinc-900 my-4 rounded-3xl md:w-2/3 p-10 md:p-12">
-            <div className="text-2xl text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
-              I currently work with Typescript, React, Next, PostgreSQL &
-              Tailwind CSS. However, more than anything,{" "}
-              <span className="text-red-600">
-                I love learning new languages.{" "}
-              </span>{" "}
-              Right now, I&apos;m studying Swift, Objective-C, Spanish & French.
+          <div className="flex flex-col md:w-2/3">
+            <div className="flex flex-row justify-between px-4 md:px-0">
+              <div className="bg-zinc-900 text-center px-4 sm:px-10 md:px-40 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full">
+                <FaLinkedin className="pr-2 text-3xl" />
+                <div>LinkedIn</div>
+              </div>
+              <div className="px-2" />
+              <div className="bg-zinc-900 text-center px-4 sm:px-10 md:px-40 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full">
+                <FaGithubSquare className="pr-2 text-3xl" />
+                <div>Github</div>
+              </div>
             </div>
-            <div className="text-3xl text-end md:text-4xl leading-tight font-semibold text-zinc-200">
-              Let&apos;s build robust and *accessible* solutions at the speed of
-              light.
+            <div className="py-2" />
+            <div className="bg-zinc-900 rounded-3xl p-10 md:p-10">
+              <div className="text-2xl text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
+                I currently work with Typescript, React, Next, PostgreSQL &
+                Tailwind CSS. However, more than anything,{" "}
+                <span className="text-red-600">
+                  I love learning new languages.{" "}
+                </span>{" "}
+                Right now, I&apos;m studying Swift, Objective-C, Spanish &
+                French.
+              </div>
+              <div className="text-3xl text-end md:text-4xl leading-tight font-semibold text-zinc-200">
+                Let&apos;s build robust and *accessible* solutions at the speed
+                of light.
+              </div>
             </div>
           </div>
         </div>
 
         {/* ------------------------------------TESTIMONIALS------------------------------------ */}
+        <div className="py-2" />
+        <div className="p-6 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
+          <div className="h-14 w-14 mr-4">
+            <Image
+              height="100"
+              width="100"
+              alt="User avatar"
+              src="/placeholder-avatar.jpg"
+            />
+          </div>
+          <div className="text-left">
+            <h2 className="text-xl font-bold">John Doe</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              CEO, Acme Inc.
+            </p>
+            <blockquote className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+              “This product has been a game-changer for our company.”
+            </blockquote>
+          </div>
+        </div>
       </main>
     </>
   );
