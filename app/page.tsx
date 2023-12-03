@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
+import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
@@ -50,7 +51,7 @@ export default function Home() {
           </button>
         </div>
 
-        {/* ------------------------------------TOGGLE MENU------------------------------------ */}
+        {/* ------------------------------------TOGGLE-MENU------------------------------------ */}
         {isSidebarOpen && (
           <div className="fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-900 flex flex-col items-start pl-10 justify-end">
             <button onClick={toggleSidebar} className="mb-4">
@@ -108,15 +109,21 @@ export default function Home() {
           <div className="px-2" />
           <div className="flex flex-col md:w-2/3">
             <div className="flex flex-row justify-between px-4 md:px-0">
-              <div className="bg-zinc-900 text-center px-4 sm:px-10 md:px-40 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full">
+              <Link
+                href="https://www.linkedin.com/in/oconnorjohnson"
+                className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+              >
                 <FaLinkedin className="pr-2 text-3xl" />
                 <div>LinkedIn</div>
-              </div>
+              </Link>
               <div className="px-2" />
-              <div className="bg-zinc-900 text-center px-4 sm:px-10 md:px-40 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full">
+              <Link
+                href="https://www.github.com/oconnorjohnson"
+                className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+              >
                 <FaGithubSquare className="pr-2 text-3xl" />
                 <div>Github</div>
-              </div>
+              </Link>
             </div>
             <div className="py-2" />
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-10">
@@ -137,27 +144,54 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ------------------------------------TESTIMONIALS------------------------------------ */}
+        {/* ------------------------------------TESTIMONIAL-CAROUSEL------------------------------------ */}
         <div className="py-2" />
-        <div className="p-6 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
-          <div className="h-14 w-14 mr-4">
-            <Image
-              height="100"
-              width="100"
-              alt="User avatar"
-              src="/placeholder-avatar.jpg"
-            />
-          </div>
-          <div className="text-left">
-            <h2 className="text-xl font-bold">John Doe</h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              CEO, Acme Inc.
-            </p>
-            <blockquote className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-              “This product has been a game-changer for our company.”
-            </blockquote>
+        <div className="p-6 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
+          <div className="flex flex-col-3">
+            {/* <div className="flex flex-col justify-center">
+              <MdArrowBackIos />
+            </div>
+            <div className="px-6" /> */}
+            <div className="text-left">
+              <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
+                &quot;This is going to be a nice quote from Kevin. He works at
+                Apple! Cool.&quot;
+              </blockquote>
+              <div className="py-4" />
+              <div className="flex flex-row">
+                <div className="flex flex-col justify-center">
+                  <div className="h-14 w-14 mr-4">
+                    <Image
+                      height="100"
+                      width="100"
+                      alt="User avatar"
+                      src="/avatar.png"
+                    />
+                  </div>
+                </div>
+                <div className="px-2" />
+                <div className="flex flex-col">
+                  <h2 className="text-2xl md:text-3xl">Kevin Carney</h2>
+                  <div className="py-1" />
+                  <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400">
+                    QA Engineer @ Apple, Inc.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <div className="px-6" />
+            <div className="flex flex-col justify-center">
+              <MdArrowForwardIos />
+            </div> */}
           </div>
         </div>
+        <div className="py-2" />
+
+        {/* ------------------------------------PROJECTS------------------------------------ */}
+
+        {/* ------------------------------------BLOG-CAROUSEL------------------------------------ */}
+
+        {/* ------------------------------------CONTACT-FORM------------------------------------ */}
       </main>
     </>
   );
