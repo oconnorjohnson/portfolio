@@ -21,7 +21,7 @@ export default function Home() {
         {/* ------------------------------------NAVBAR------------------------------------ */}
         <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-900">
           <Link href="/" className="pl-4 text-2xl text-zinc-200 font-semibold">
-            daniel j.
+            daniel <span className="text-red-600">j.</span>
           </Link>
           <div className="hidden md:flex md:justify-end">
             <Link
@@ -58,10 +58,10 @@ export default function Home() {
               <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
             </button>
             <Link href="#" className="text-6xl py-4 text-zinc-200 font-bold">
-              blog
+              projects
             </Link>
             <Link href="#" className="text-6xl py-4 text-zinc-200 font-bold">
-              projects
+              blog
             </Link>
             <Link
               href="#"
@@ -74,41 +74,49 @@ export default function Home() {
 
         {/* ------------------------------------HERO------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
+          {/*Hero Card*/}
           <div className="bg-zinc-900 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
             <div className="text-4xl md:text-6xl leading-tight font-extralight pb-4 text-zinc-400">
               Are you looking for a{" "}
               <span className="text-red-600">solution?</span>
             </div>
             <div className="text-6xl md:text-7xl leading-tight font-bold text-zinc-200">
-              Well, I&apos;m a full-stack problem-solver.
+              <span className="font-extralight text-zinc-400">Well, </span>
+              I&apos;m a full-stack problem-solver.
             </div>
           </div>
+          {/*End Hero Card*/}
           <div className="px-2" />
+          {/*Get In Touch Card*/}
           <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-400">
-              Got an idea?
+              Got an <span className="text-red-600">idea?</span>
             </div>
             <div className="py-1" />
             <button className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
-              Get in touch.
+              Get In Touch
             </button>
           </div>
+          {/*End Get In Touch Card*/}
         </div>
 
         {/* ------------------------------------ABOUT------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
+          {/*Born and Based Card*/}
           <div className="bg-zinc-900 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
               Born & Based in
             </div>
             <div className="py-1" />
             <button className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
-              The Bay Area.
+              The Bay Area
             </button>
           </div>
-          <div className="px-2" />
+          {/*End Born and Based Card*/}
+          <div className="p-2" />
           <div className="flex flex-col md:w-2/3">
-            <div className="flex flex-row justify-between px-4 md:px-0">
+            <div className="flex flex-row justify-between md:px-0">
+              {/*LinkedIn Card*/}
               <Link
                 href="https://www.linkedin.com/in/oconnorjohnson"
                 className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
@@ -116,7 +124,9 @@ export default function Home() {
                 <FaLinkedin className="pr-2 text-3xl" />
                 <div>LinkedIn</div>
               </Link>
+              {/*End LinkedIn Card*/}
               <div className="px-2" />
+              {/*Github Card*/}
               <Link
                 href="https://www.github.com/oconnorjohnson"
                 className="bg-zinc-900 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
@@ -124,8 +134,10 @@ export default function Home() {
                 <FaGithubSquare className="pr-2 text-3xl" />
                 <div>Github</div>
               </Link>
+              {/*End Github Card*/}
             </div>
             <div className="py-2" />
+            {/*About Card*/}
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-10">
               <div className="text-2xl text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
                 I currently work with Typescript, React, Next, PostgreSQL &
@@ -141,49 +153,59 @@ export default function Home() {
                 of light.
               </div>
             </div>
+            {/*End About Card*/}
           </div>
         </div>
 
-        {/* ------------------------------------TESTIMONIAL-CAROUSEL------------------------------------ */}
+        {/* ------------------------------------TESTIMONIAL------------------------------------ */}
         <div className="py-2" />
-        <div className="p-6 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
-          <div className="flex flex-col-3">
-            {/* <div className="flex flex-col justify-center">
+        <div className="flex flex-row">
+          {/*Testimonial Card*/}
+          <div className="px-2 md:hidden" />
+          <div className="p-6 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
+            <div className="flex flex-col-3">
+              {/* <div className="flex flex-col justify-center">
               <MdArrowBackIos />
             </div>
             <div className="px-6" /> */}
-            <div className="text-left">
-              <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
-                &quot;This is going to be a nice quote from Kevin. He works at
-                Apple! Cool.&quot;
-              </blockquote>
-              <div className="py-4" />
-              <div className="flex flex-row">
-                <div className="flex flex-col justify-center">
-                  <div className="h-14 w-14 mr-4">
-                    <Image
-                      height="100"
-                      width="100"
-                      alt="User avatar"
-                      src="/avatar.png"
-                    />
+              <div className="text-left">
+                <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
+                  &quot;This is going to be a nice quote from Kevin. He works at
+                  Apple! Cool.&quot;
+                </blockquote>
+                <div className="py-4" />
+                <div className="flex flex-row">
+                  <div className="flex flex-col justify-center">
+                    <div className="h-14 w-14 mr-4">
+                      <Image
+                        height="100"
+                        width="100"
+                        alt="User avatar"
+                        src="/avatar.png"
+                      />
+                    </div>
+                  </div>
+                  <div className="px-2" />
+                  <div className="flex flex-col">
+                    <h2 className="text-2xl md:text-3xl text-zinc-200">
+                      Kevin Carney
+                    </h2>
+                    <div className="py-1" />
+                    <p className="text-xl md:text-2xl text-zinc-400">
+                      QA Engineer @{" "}
+                      <span className="text-red-600">Apple, Inc.</span>
+                    </p>
                   </div>
                 </div>
-                <div className="px-2" />
-                <div className="flex flex-col">
-                  <h2 className="text-2xl md:text-3xl">Kevin Carney</h2>
-                  <div className="py-1" />
-                  <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400">
-                    QA Engineer @ Apple, Inc.
-                  </p>
-                </div>
               </div>
-            </div>
-            {/* <div className="px-6" />
+              {/* <div className="px-6" />
             <div className="flex flex-col justify-center">
               <MdArrowForwardIos />
             </div> */}
+            </div>
           </div>
+          <div className="px-2 md:hidden" />
+          {/*Testimonial Card*/}
         </div>
         <div className="py-2" />
 
