@@ -67,7 +67,7 @@ export default function Home() {
 
         {/* ------------------------------------HERO------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
-          <div className="bg-zinc-900 my-4 rounded-3xl md:w-2/3 p-10 md:p-12">
+          <div className="bg-zinc-900 my-4 rounded-3xl md:w-2/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-4 text-zinc-200">
               Are you looking for a solution?
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
           <div className="px-2" />
-          <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-12">
+          <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-200">
               Got an idea?
             </div>
