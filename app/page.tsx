@@ -53,7 +53,7 @@ export default function Home() {
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
             daniel{" "}
-            <span className="text-cyan-400 hover:text-cyan-400 pl-0.5">
+            <span className="text-violet-600 hover:text-violet-600 pl-0.5">
               {" "}
               j.
             </span>
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="bg-zinc-900 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
             <div className="text-4xl md:text-6xl leading-tight font-extralight pb-4 text-zinc-400">
               Are you looking for a{" "}
-              <span className="text-cyan-400">solution?</span>
+              <span className="text-violet-600">solution?</span>
             </div>
             <div className="text-6xl md:text-7xl leading-tight font-bold text-zinc-200">
               <span className="font-extralight text-zinc-400">Well, </span>
@@ -119,7 +119,7 @@ export default function Home() {
           {/*Get In Touch Card*/}
           <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-400">
-              Got an <span className="text-cyan-400">idea?</span>
+              Got an <span className="text-violet-600">idea?</span>
             </div>
             <div className="py-1" />
             <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-white py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -134,7 +134,7 @@ export default function Home() {
           {/*Born and Based Card*/}
           <div className="bg-zinc-900 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
-              Born & <span className="text-cyan-400">Based</span> in
+              Born & <span className="text-violet-600">Based</span> in
             </div>
             <div className="py-1" />
             <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
               <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-400">
                 I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
-                <span className="text-cyan-400">
+                <span className="text-violet-600">
                   I love learning new languages.
                 </span>{" "}
                 Currently, I&apos;m studying Swift, Objective-C, Spanish &
@@ -200,12 +200,12 @@ export default function Home() {
                   <div className="flex flex-col md:grid md:grid-cols-3">
                     <button
                       onClick={prevTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-cyan-600"
+                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-violet-600"
                     >
                       <MdArrowCircleLeft />
                     </button>
-                    <div className="flex flex-row justify-center">
-                      <div className="flex flex-col justify-center">
+                    <div className="flex flex-row justify-start pl-24 ">
+                      {/* <div className="flex flex-col justify-center">
                         <div className="h-14 w-14 mr-4">
                           <Image
                             height="100"
@@ -214,9 +214,9 @@ export default function Home() {
                             src="/avatar.png"
                           />
                         </div>
-                      </div>
+                      </div> */}
                       <div className="px-2" />
-                      <div className="flex flex-col">
+                      <div className="flex flex-col ">
                         <h2 className="text-2xl md:text-3xl text-zinc-200">
                           {testimonials[currentTestimonial].name}
                         </h2>
@@ -228,7 +228,7 @@ export default function Home() {
                     </div>
                     <button
                       onClick={nextTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-cyan-600"
+                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-violet-600"
                     >
                       <MdArrowCircleRight />
                     </button>
@@ -375,14 +375,14 @@ export default function Home() {
           <div className="p-4 grid grid-cols-1 md:grid-cols-2 text-xl md:text-3xl rounded-3xl bg-zinc-900">
             <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
               Interested in working{" "}
-              <span className="text-cyan-400 hover:text-cyan-400 pl-2">
+              <span className="text-violet-600 hover:text-violet-600 pl-2">
                 {" "}
                 together?
               </span>
             </div>
             <Link
               href="mailto:recruitme@danielojohnson.com"
-              className="flex justify-center text-xl md:text-3xl text-cyan-600 rounded-3xl py-4 px-8 hover:text-black bg-zinc-200 transition-colors font-semibold"
+              className="flex justify-center text-xl md:text-3xl text-violet-600 rounded-3xl py-4 px-8 hover:text-black bg-zinc-200 transition-colors font-semibold"
             >
               recruitme@danielojohnson.com
             </Link>
@@ -397,7 +397,7 @@ export default function Home() {
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
             daniel{" "}
-            <span className="text-cyan-500 hover:text-cyan-400 pl-0.5">
+            <span className="text-violet-600 hover:text-violet-600 pl-0.5">
               {" "}
               j.
             </span>
