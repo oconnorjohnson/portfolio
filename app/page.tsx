@@ -256,7 +256,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row px-4 md:px-0">
           {/*PocketPR Card*/}
           <Link href="/">
-            <div className="flex flex-col bg-zinc-900 hover:bg-zinc-800 rounded-3xl p-12">
+            <div className="flex flex-col bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
               <div className="flex flex-row">
                 <div className="flex flex-col">
                   <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
@@ -283,22 +283,86 @@ export default function Home() {
           <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
             <Link href="/">
               <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
-                {/* Card 1 content */}
+                <div className="flex flex-row">
+                  <div className="flex flex-col">
+                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                      PocketPR
+                    </h1>
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                      Co-Founder & CEO
+                    </h2>
+                  </div>
+                </div>
+                <Image
+                  height="250"
+                  width="500"
+                  alt="pocketpr screenshot"
+                  className="rounded-3xl"
+                  src="/pocketpr.png"
+                />
               </div>
             </Link>
             <Link href="/">
               <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
-                {/* Card 2 content */}
+                <div className="flex flex-row">
+                  <div className="flex flex-col">
+                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                      PocketPR
+                    </h1>
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                      Co-Founder & CEO
+                    </h2>
+                  </div>
+                </div>
+                <Image
+                  height="250"
+                  width="500"
+                  alt="pocketpr screenshot"
+                  className="rounded-3xl"
+                  src="/pocketpr.png"
+                />
               </div>
             </Link>
             <Link href="/">
               <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
-                {/* Card 3 content */}
+                <div className="flex flex-row">
+                  <div className="flex flex-col">
+                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                      PocketPR
+                    </h1>
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                      Co-Founder & CEO
+                    </h2>
+                  </div>
+                </div>
+                <Image
+                  height="250"
+                  width="500"
+                  alt="pocketpr screenshot"
+                  className="rounded-3xl"
+                  src="/pocketpr.png"
+                />
               </div>
             </Link>
             <Link href="/">
               <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
-                {/* Card 4 content */}
+                <div className="flex flex-row">
+                  <div className="flex flex-col">
+                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                      PocketPR
+                    </h1>
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                      Co-Founder & CEO
+                    </h2>
+                  </div>
+                </div>
+                <Image
+                  height="250"
+                  width="500"
+                  alt="pocketpr screenshot"
+                  className="rounded-3xl"
+                  src="/pocketpr.png"
+                />
               </div>
             </Link>
           </div>
@@ -307,7 +371,24 @@ export default function Home() {
         <div className="py-2" />
 
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
-
+        <div className="px-4 md:px-0">
+          <div className="p-4 grid grid-cols-1 md:grid-cols-2 text-xl md:text-3xl rounded-3xl bg-zinc-900">
+            <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
+              Interested in working{" "}
+              <span className="text-cyan-400 hover:text-cyan-400 pl-2">
+                {" "}
+                together?
+              </span>
+            </div>
+            <Link
+              href="mailto:recruitme@danielojohnson.com"
+              className="flex justify-center text-xl md:text-3xl text-cyan-600 rounded-3xl py-4 px-8 hover:text-black bg-zinc-200 transition-colors font-semibold"
+            >
+              recruitme@danielojohnson.com
+            </Link>
+          </div>
+        </div>
+        <div className="py-2" />
         {/* ------------------------------------FOOTER------------------------------------ */}
 
         <div className="mx-4 lg:mx-0 p-4 flex justify-center rounded-3xl bg-zinc-900">
@@ -316,7 +397,7 @@ export default function Home() {
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
             daniel{" "}
-            <span className="text-cyan-400 hover:text-cyan-400 pl-0.5">
+            <span className="text-cyan-500 hover:text-cyan-400 pl-0.5">
               {" "}
               j.
             </span>
