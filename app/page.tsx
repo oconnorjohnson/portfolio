@@ -24,9 +24,10 @@ export default function Home() {
       position: "QA Engineer @ Apple, Inc.",
     },
     {
-      quote: "This is another testimonial quote.",
-      name: "Another Name",
-      position: "Another Position",
+      quote:
+        "This is going to be a nice quote from Keegan. He works at PocketPR! Cool.",
+      name: "Keegan Anglim",
+      position: "Co-Founder & CTO @ PocketPR",
     },
   ];
 
@@ -233,10 +234,10 @@ export default function Home() {
               </div>
               <div className="flex flex-row text-6xl md:hidden">
                 <button onClick={prevTestimonial}>
-                  <MdArrowCircleLeft className="" />
+                  <MdArrowCircleLeft className="pr-4" />
                 </button>
                 <button onClick={nextTestimonial}>
-                  <MdArrowCircleRight className="" />
+                  <MdArrowCircleRight className="pr-4" />
                 </button>
               </div>
             </div>
