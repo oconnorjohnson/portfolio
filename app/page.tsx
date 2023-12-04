@@ -16,6 +16,32 @@ export default function Home() {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  const testimonials = [
+    {
+      quote:
+        "This is going to be a nice quote from Kevin. He works at Apple! Cool.",
+      name: "Kevin Carney",
+      position: "QA Engineer @ Apple, Inc.",
+    },
+    {
+      quote: "This is another testimonial quote.",
+      name: "Another Name",
+      position: "Another Position",
+    },
+  ];
+
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((currentTestimonial + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial(
+      (currentTestimonial - 1 + testimonials.length) % testimonials.length
+    );
+  };
+
   return (
     <>
       <main className="mx-auto lg:w-3/4 2xl:w-2/3">
@@ -157,23 +183,21 @@ export default function Home() {
 
         {/* ------------------------------------TESTIMONIAL------------------------------------ */}
         <div className="py-2" />
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row ">
           {/*Testimonial Card*/}
-          <div className="px-4 md:px-0">
-            <div className="p-10 md:p-12 w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
+          <div className="px-4 md:px-0 w-full">
+            <div className="p-10 md:p-12 w-full min-w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
               <div className="flex flex-col-3">
-                {/* <div className="flex flex-col justify-center">
-              <MdArrowBackIos />
-            </div>
-            <div className="px-6" /> */}
                 <div className="text-left">
-                  <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
-                    &quot;This is going to be a nice quote from Kevin. He works
-                    at Apple! Cool.&quot;
+                  <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl w-full">
+                    {testimonials[currentTestimonial].quote}
                   </blockquote>
                   <div className="py-4" />
                   <div className="flex flex-col md:grid md:grid-cols-3">
-                    <button className="hidden md:flex hover:text-red-600 flex-col items-center justify-center text-6xl">
+                    <button
+                      onClick={prevTestimonial}
+                      className="hidden md:flex flex-col items-center justify-center text-6xl"
+                    >
                       <MdArrowCircleLeft />
                     </button>
                     <div className="flex flex-row justify-center">
@@ -190,27 +214,30 @@ export default function Home() {
                       <div className="px-2" />
                       <div className="flex flex-col">
                         <h2 className="text-2xl md:text-3xl text-zinc-200">
-                          Kevin Carney
+                          {testimonials[currentTestimonial].name}
                         </h2>
                         <div className="py-1" />
                         <p className="text-xl md:text-2xl text-zinc-400">
-                          QA Engineer @{" "}
-                          <span className="text-red-600">Apple, Inc.</span>
+                          {testimonials[currentTestimonial].position}
                         </p>
                       </div>
                     </div>
-                    <button className="hidden md:flex hover:text-red-600 flex-col items-center justify-center text-6xl">
+                    <button
+                      onClick={nextTestimonial}
+                      className="hidden md:flex flex-col items-center justify-center text-6xl"
+                    >
                       <MdArrowCircleRight />
                     </button>
                   </div>
                 </div>
-
-                {/* <div className="px-6" />
-                 */}
               </div>
               <div className="flex flex-row text-6xl md:hidden">
-                <MdArrowCircleLeft className="" />
-                <MdArrowCircleRight className="" />
+                <button onClick={prevTestimonial}>
+                  <MdArrowCircleLeft className="" />
+                </button>
+                <button onClick={nextTestimonial}>
+                  <MdArrowCircleRight className="" />
+                </button>
               </div>
             </div>
           </div>
