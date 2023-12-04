@@ -21,7 +21,7 @@ export default function Home() {
       quote:
         "This is going to be a nice quote from Kevin. He works at Apple! Cool.",
       name: "Kevin Carney",
-      position: "QA Engineer @ Apple, Inc.",
+      position: "QA Engineer @ Apple",
     },
     {
       quote:
@@ -200,7 +200,7 @@ export default function Home() {
                   <div className="flex flex-col md:grid md:grid-cols-3">
                     <button
                       onClick={prevTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl"
+                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-cyan-600"
                     >
                       <MdArrowCircleLeft />
                     </button>
@@ -228,7 +228,7 @@ export default function Home() {
                     </div>
                     <button
                       onClick={nextTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl"
+                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-cyan-600"
                     >
                       <MdArrowCircleRight />
                     </button>
@@ -309,6 +309,20 @@ export default function Home() {
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
 
         {/* ------------------------------------FOOTER------------------------------------ */}
+
+        <div className="mx-4 lg:mx-0 p-4 flex justify-center rounded-3xl bg-zinc-900">
+          <Link
+            href="/"
+            className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
+          >
+            daniel{" "}
+            <span className="text-cyan-400 hover:text-cyan-400 pl-0.5">
+              {" "}
+              j.
+            </span>
+          </Link>
+        </div>
+        <div className="py-2" />
       </main>
     </>
   );
