@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
+import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
@@ -103,7 +104,7 @@ export default function Home() {
           {/*Born and Based Card*/}
           <div className="bg-zinc-900 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
-              Born & Based in
+              Born & <span className="text-red-600">Based</span> in
             </div>
             <div className="py-1" />
             <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -137,17 +138,17 @@ export default function Home() {
             <div className="py-2" />
             {/*About Card*/}
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
-              <div className="text-2xl text-start md:text-end md:text-3xl leading-tight font-extralight pb-4 text-zinc-400">
+              <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-400">
                 I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
                 <span className="text-red-600">
-                  I love learning new languages.{" "}
+                  I love learning new languages.
                 </span>{" "}
-                I&apos;m currently studying Swift, Objective-C, Spanish &
+                Currently, I&apos;m studying Swift, Objective-C, Spanish &
                 French.
               </div>
-              <div className="text-3xl text-start md:text-end md:text-4xl leading-tight font-semibold text-zinc-200">
-                Let&apos;s build robust and *accessible* solutions at the speed
-                of light.
+              <div className="text-3xl text-start md:text-end md:text-5xl leading-tight font-semibold text-zinc-200">
+                Let&apos;s build robust & *accessible* solutions <br /> at the
+                speed of light.
               </div>
             </div>
             {/*End About Card*/}
@@ -156,52 +157,66 @@ export default function Home() {
 
         {/* ------------------------------------TESTIMONIAL------------------------------------ */}
         <div className="py-2" />
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row">
           {/*Testimonial Card*/}
-          <div className="px-2 md:hidden" />
-          <div className="p-10 md:p-12 mx-auto w-full rounded-3xl bg-zinc-900 flex items-center">
-            <div className="flex flex-col-3">
-              {/* <div className="flex flex-col justify-center">
+          <div className="px-4 md:px-0">
+            <div className="p-10 md:p-12 w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
+              <div className="flex flex-col-3">
+                {/* <div className="flex flex-col justify-center">
               <MdArrowBackIos />
             </div>
             <div className="px-6" /> */}
-              <div className="text-left">
-                <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
-                  &quot;This is going to be a nice quote from Kevin. He works at
-                  Apple! Cool.&quot;
-                </blockquote>
-                <div className="py-4" />
-                <div className="flex flex-row">
-                  <div className="flex flex-col justify-center">
-                    <div className="h-14 w-14 mr-4">
-                      <Image
-                        height="100"
-                        width="100"
-                        alt="User avatar"
-                        src="/avatar.png"
-                      />
+                <div className="text-left">
+                  <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl">
+                    &quot;This is going to be a nice quote from Kevin. He works
+                    at Apple! Cool.&quot;
+                  </blockquote>
+                  <div className="py-4" />
+                  <div className="flex flex-col md:grid md:grid-cols-3">
+                    <button className="hidden md:flex hover:text-red-600 flex-col items-center justify-center text-6xl">
+                      <MdArrowCircleLeft />
+                    </button>
+                    <div className="flex flex-row justify-center">
+                      <div className="flex flex-col justify-center">
+                        <div className="h-14 w-14 mr-4">
+                          <Image
+                            height="100"
+                            width="100"
+                            alt="User avatar"
+                            src="/avatar.png"
+                          />
+                        </div>
+                      </div>
+                      <div className="px-2" />
+                      <div className="flex flex-col">
+                        <h2 className="text-2xl md:text-3xl text-zinc-200">
+                          Kevin Carney
+                        </h2>
+                        <div className="py-1" />
+                        <p className="text-xl md:text-2xl text-zinc-400">
+                          QA Engineer @{" "}
+                          <span className="text-red-600">Apple, Inc.</span>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="px-2" />
-                  <div className="flex flex-col">
-                    <h2 className="text-2xl md:text-3xl text-zinc-200">
-                      Kevin Carney
-                    </h2>
-                    <div className="py-1" />
-                    <p className="text-xl md:text-2xl text-zinc-400">
-                      QA Engineer @{" "}
-                      <span className="text-red-600">Apple, Inc.</span>
-                    </p>
+                    <button className="hidden md:flex hover:text-red-600 flex-col items-center justify-center text-6xl">
+                      <MdArrowCircleRight />
+                    </button>
                   </div>
                 </div>
+
+                {/* <div className="px-6" />
+                 */}
               </div>
-              {/* <div className="px-6" />
-            <div className="flex flex-col justify-center">
-              <MdArrowForwardIos />
-            </div> */}
+              <div className="flex flex-row text-6xl md:hidden">
+                <MdArrowCircleLeft className="" />
+                <MdArrowCircleRight className="" />
+              </div>
             </div>
           </div>
+
           <div className="px-2 md:hidden" />
+
           {/*End Testimonial Card*/}
         </div>
         <div className="py-2" />
@@ -260,9 +275,9 @@ export default function Home() {
         </div>
         <div className="py-2" />
 
-        {/* ------------------------------------BLOG-CAROUSEL------------------------------------ */}
-
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
+
+        {/* ------------------------------------FOOTER------------------------------------ */}
       </main>
     </>
   );
