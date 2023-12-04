@@ -25,9 +25,9 @@ export default function Home() {
     },
     {
       quote:
-        "This is going to be a nice quote from Keegan. He works at PocketPR! Cool.",
+        "This is going to be a nice quote from Keegan. He works at PocketPR!",
       name: "Keegan Anglim",
-      position: "Co-Founder & CTO @ PocketPR",
+      position: "CTO @ PocketPR",
     },
   ];
 
@@ -53,7 +53,10 @@ export default function Home() {
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
             daniel{" "}
-            <span className="text-red-600 hover:text-red-400 pl-0.5"> j.</span>
+            <span className="text-cyan-400 hover:text-cyan-400 pl-0.5">
+              {" "}
+              j.
+            </span>
           </Link>
           <div className="hidden md:flex md:justify-end">
             <Link
@@ -104,7 +107,7 @@ export default function Home() {
           <div className="bg-zinc-900 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
             <div className="text-4xl md:text-6xl leading-tight font-extralight pb-4 text-zinc-400">
               Are you looking for a{" "}
-              <span className="text-red-600">solution?</span>
+              <span className="text-cyan-400">solution?</span>
             </div>
             <div className="text-6xl md:text-7xl leading-tight font-bold text-zinc-200">
               <span className="font-extralight text-zinc-400">Well, </span>
@@ -116,7 +119,7 @@ export default function Home() {
           {/*Get In Touch Card*/}
           <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-400">
-              Got an <span className="text-red-600">idea?</span>
+              Got an <span className="text-cyan-400">idea?</span>
             </div>
             <div className="py-1" />
             <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-white py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -131,7 +134,7 @@ export default function Home() {
           {/*Born and Based Card*/}
           <div className="bg-zinc-900 text-center flex flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
-              Born & <span className="text-red-600">Based</span> in
+              Born & <span className="text-cyan-400">Based</span> in
             </div>
             <div className="py-1" />
             <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -167,7 +170,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
               <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-400">
                 I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
-                <span className="text-red-600">
+                <span className="text-cyan-400">
                   I love learning new languages.
                 </span>{" "}
                 Currently, I&apos;m studying Swift, Objective-C, Spanish &
