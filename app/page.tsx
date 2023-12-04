@@ -286,20 +286,25 @@ export default function Home() {
                 <div className="flex flex-row">
                   <div className="flex flex-col">
                     <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
-                      PocketPR
+                      Blog Post One
                     </h1>
                     <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
                       Co-Founder & CEO
                     </h2>
                   </div>
                 </div>
-                <Image
-                  height="250"
-                  width="500"
-                  alt="pocketpr screenshot"
-                  className="rounded-3xl"
-                  src="/pocketpr.png"
-                />
+                <div className="flex justify-center">
+                  <div className="relative h-32 w-64">
+                    <Image
+                      layout="fill"
+                      alt="pocketpr screenshot"
+                      className="rounded-xl"
+                      src="/systems.png"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                </div>
               </div>
             </Link>
             <Link href="/">
@@ -307,20 +312,25 @@ export default function Home() {
                 <div className="flex flex-row">
                   <div className="flex flex-col">
                     <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
-                      PocketPR
+                      CARES
                     </h1>
                     <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
                       Co-Founder & CEO
                     </h2>
                   </div>
                 </div>
-                <Image
-                  height="250"
-                  width="500"
-                  alt="pocketpr screenshot"
-                  className="rounded-3xl"
-                  src="/pocketpr.png"
-                />
+                <div className="flex justify-center">
+                  <div className="relative h-32 w-64">
+                    <Image
+                      layout="fill"
+                      alt="pocketpr screenshot"
+                      className="rounded-xl"
+                      src="/cares.png"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                </div>
               </div>
             </Link>
             <Link href="/">
@@ -328,20 +338,25 @@ export default function Home() {
                 <div className="flex flex-row">
                   <div className="flex flex-col">
                     <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
-                      PocketPR
+                      Portfolio
                     </h1>
                     <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
                       Co-Founder & CEO
                     </h2>
                   </div>
                 </div>
-                <Image
-                  height="250"
-                  width="500"
-                  alt="pocketpr screenshot"
-                  className="rounded-3xl"
-                  src="/pocketpr.png"
-                />
+                <div className="flex justify-center">
+                  <div className="relative h-32 w-64">
+                    <Image
+                      layout="fill"
+                      alt="pocketpr screenshot"
+                      className="rounded-xl"
+                      src="/portfolio.png"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                </div>
               </div>
             </Link>
             <Link href="/">
@@ -349,20 +364,25 @@ export default function Home() {
                 <div className="flex flex-row">
                   <div className="flex flex-col">
                     <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
-                      PocketPR
+                      Blog Post Two
                     </h1>
                     <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
                       Co-Founder & CEO
                     </h2>
                   </div>
                 </div>
-                <Image
-                  height="250"
-                  width="500"
-                  alt="pocketpr screenshot"
-                  className="rounded-3xl"
-                  src="/pocketpr.png"
-                />
+                <div className="flex justify-center">
+                  <div className="relative h-32 w-64">
+                    <Image
+                      layout="fill"
+                      alt="pocketpr screenshot"
+                      className="rounded-xl"
+                      src="/embeddings.png"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
+                  </div>
+                </div>
               </div>
             </Link>
           </div>
@@ -372,7 +392,7 @@ export default function Home() {
 
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
         <div className="px-4 md:px-0">
-          <div className="p-4 grid grid-cols-1 md:grid-cols-2 text-xl md:text-3xl rounded-3xl bg-zinc-900">
+          <div className="p-12 py-12 grid grid-cols-1 md:grid-cols-2 text-xl md:text-3xl rounded-3xl bg-zinc-900">
             <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
               Interested in working{" "}
               <span className="text-violet-600 hover:text-violet-600 pl-2">
@@ -391,7 +411,7 @@ export default function Home() {
         <div className="py-2" />
         {/* ------------------------------------FOOTER------------------------------------ */}
 
-        <div className="mx-4 lg:mx-0 p-4 flex justify-center rounded-3xl bg-zinc-900">
+        <div className="mx-4 lg:mx-0 p-4 flex justify-between rounded-3xl bg-zinc-900">
           <Link
             href="/"
             className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
@@ -402,6 +422,9 @@ export default function Home() {
               j.
             </span>
           </Link>
+          <div className="pr-4 text-2xl text-zinc-200 transition-colors font-semibold">
+            Let&apos;s build, <span className="text-violet-600">quickly.</span>
+          </div>
         </div>
         <div className="py-2" />
       </main>
