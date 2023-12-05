@@ -133,11 +133,11 @@ export default function Home() {
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
           <div className="hidden md:flex bg-zinc-900 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
-            <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
+            <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-400">
               Born & <span className="text-violet-600">Based</span> in
             </div>
-            <div className="py-1" />
-            <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+
+            <div className="text-5xl md:text-6xl  py-8 px-10 leading-tight font-bold text-zinc-200">
               The Bay Area
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
               {/*LinkedIn Card*/}
               <Link
                 href="https://www.linkedin.com/in/oconnorjohnson"
-                className="bg-zinc-900 transition-colors hover:bg-zinc-800 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-200 transition-colors hover:bg-white flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-900 rounded-3xl py-6 w-full"
               >
                 <FaLinkedin className="pr-2 text-3xl" />
                 <div>LinkedIn</div>
@@ -158,7 +158,7 @@ export default function Home() {
               {/*Github Card*/}
               <Link
                 href="https://www.github.com/oconnorjohnson"
-                className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-zinc-800 text-center px-4 sm:px-10 md:px-24 text-2xl font-extralight text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-200 flex flex-row justify-center transition-colors hover:bg-white text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-900 rounded-3xl py-6 w-full"
               >
                 <FaGithubSquare className="pr-2 text-3xl" />
                 <div>Github</div>
@@ -172,7 +172,7 @@ export default function Home() {
                 Born & <span className="text-violet-600">Based</span> in
               </div>
               <div className="py-1" />
-              <div className="text-3xl md:text-4xl bg-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+              <div className="text-3xl md:text-4xl  py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-200">
                 The Bay Area
               </div>
             </div>
