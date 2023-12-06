@@ -122,7 +122,7 @@ export default function Home() {
               Got an <span className="text-violet-600">idea?</span>
             </div>
             <div className="py-1" />
-            <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-white py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+            <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-zinc-900 hover:text-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
               Get In Touch
             </button>
           </div>
@@ -149,9 +149,9 @@ export default function Home() {
 
               <Link
                 href="https://www.linkedin.com/in/oconnorjohnson"
-                className="bg-zinc-900 transition-colors hover:bg-white flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-900 transition-colors hover:bg-zinc-200 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full"
               >
-                <div className="flex flex-row justify-center text-center px-4  text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:bg-zinc-800 transition-colors">
+                <div className="flex flex-row justify-center text-center px-4  text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200   ">
                   <FaLinkedin className="pr-2 text-3xl" />
                   <div>LinkedIn</div>
                 </div>
@@ -162,9 +162,9 @@ export default function Home() {
               {/*Github Card*/}
               <Link
                 href="https://www.github.com/oconnorjohnson"
-                className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-white text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full"
+                className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-zinc-200 text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-200 rounded-3xl py-6 w-full"
               >
-                <div className="flex flex-row justify-center text-center px-4 text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:bg-zinc-800 transition-colors">
+                <div className="flex flex-row justify-center text-center px-4 text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 ">
                   <FaGithubSquare className="pr-2 text-3xl" />
                   <div>Github</div>
                 </div>
