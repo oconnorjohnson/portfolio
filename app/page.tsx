@@ -151,7 +151,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/oconnorjohnson"
                 className="bg-zinc-900 transition-colors hover:bg-zinc-200 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full"
               >
-                <div className="flex flex-row justify-center text-center px-4  text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200   ">
+                <div className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200   ">
                   <FaLinkedin className="pr-2 text-3xl" />
                   <div>LinkedIn</div>
                 </div>
@@ -164,11 +164,12 @@ export default function Home() {
                 href="https://www.github.com/oconnorjohnson"
                 className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-zinc-200 text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-200 rounded-3xl py-6 w-full"
               >
-                <div className="flex flex-row justify-center text-center px-4 text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 ">
+                <div className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 ">
                   <FaGithubSquare className="pr-2 text-3xl" />
                   <div>Github</div>
                 </div>
               </Link>
+
               {/*End Github Card*/}
             </div>
             <div className="py-2 md:hidden" />
@@ -178,7 +179,7 @@ export default function Home() {
                 Born, Reared & <span className="text-violet-600">Based</span> in
               </div>
               <div className="py-1" />
-              <div className="text-3xl md:text-4xl  pt-8 px-10 rounded-3xl leading-tight font-bold text-zinc-200">
+              <div className="text-3xl md:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-200">
                 The Bay Area
               </div>
             </div>
@@ -410,7 +411,7 @@ export default function Home() {
 
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
         <div className="px-4 md:px-0">
-          <div className="p-12 py-12 grid grid-cols-1 md:grid-cols-2 text-xl md:text-3xl rounded-3xl bg-zinc-900">
+          <div className="p-12 py-12 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-900">
             <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
               Interested in working{" "}
               <span className="text-violet-600 hover:text-violet-600 pl-2">
@@ -420,7 +421,7 @@ export default function Home() {
             </div>
             <Link
               href="mailto:recruitme@danielojohnson.com"
-              className="flex justify-center text-xl md:text-3xl text-violet-600 rounded-3xl py-4 px-8 hover:text-black bg-zinc-200 transition-colors font-semibold"
+              className="flex justify-center text-md md:text-3xl text-violet-600 rounded-3xl py-4 px-12 hover:text-black bg-zinc-200 transition-colors font-semibold"
             >
               recruitme@danielojohnson.com
             </Link>
@@ -432,7 +433,7 @@ export default function Home() {
         <div className="mx-4 lg:mx-0 p-4 flex justify-between rounded-3xl bg-zinc-900">
           <Link
             href="/"
-            className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
+            className="pl-4 text-lg md:text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
             daniel{" "}
             <span className="text-violet-600 hover:text-violet-600 pl-0.5">
@@ -440,7 +441,7 @@ export default function Home() {
               j.
             </span>
           </Link>
-          <div className="pr-4 text-2xl text-zinc-200 transition-colors font-semibold">
+          <div className="pr-4 text-lg md:text-2xl text-zinc-200 transition-colors font-semibold">
             Let&apos;s build, <span className="text-violet-600">quickly.</span>
           </div>
         </div>
