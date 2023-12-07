@@ -48,10 +48,10 @@ export default function Home() {
     <>
       <main className="mx-auto lg:w-3/4 2xl:w-2/3">
         {/* ------------------------------------NAVBAR------------------------------------ */}
-        <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-900">
+        <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-950">
           <Link
             href="/"
-            className="pl-4 text-2xl text-zinc-200 hover:text-red-600 transition-colors font-semibold"
+            className="pl-4 text-2xl text-zinc-100 hover:text-red-600 transition-colors font-semibold"
           >
             daniel{" "}
             <span className="text-red-600 hover:text-red-600 pl-0.5"> j.</span>
@@ -59,13 +59,13 @@ export default function Home() {
           <div className="hidden md:flex md:justify-end">
             <Link
               href="#"
-              className="pr-8 text-2xl text-zinc-200 transition-colors hover:text-red-600 font-semibold"
+              className="pr-8 text-2xl text-zinc-100 transition-colors hover:text-red-600 font-semibold"
             >
               works
             </Link>
             <Link
               href="#"
-              className="pr-4 text-2xl text-zinc-200 transition-colors hover:text-red-600 font-semibold"
+              className="pr-4 text-2xl text-zinc-100 transition-colors hover:text-red-600 font-semibold"
             >
               contact
             </Link>
@@ -80,19 +80,19 @@ export default function Home() {
 
         {/* ------------------------------------TOGGLE-MENU------------------------------------ */}
         {isSidebarOpen && (
-          <div className="fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-900 flex flex-col items-start pl-10 justify-end">
+          <div className="fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-950 flex flex-col items-start pl-10 justify-end">
             <button onClick={toggleSidebar} className="mb-4">
               <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
             </button>
             <Link
               href="#"
-              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-red-600 font-bold"
+              className="text-6xl py-4 text-zinc-100 transition-colors hover:text-red-600 font-bold"
             >
               works
             </Link>
             <Link
               href="#"
-              className="text-6xl py-4 pb-10 text-zinc-200 transition-colors hover:text-red-600 font-bold"
+              className="text-6xl py-4 pb-10 text-zinc-100 transition-colors hover:text-red-600 font-bold"
             >
               contact
             </Link>
@@ -102,25 +102,25 @@ export default function Home() {
         {/* ------------------------------------HERO------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Hero Card*/}
-          <div className="bg-zinc-900 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
-            <div className="text-4xl md:text-6xl leading-tight font-extralight pb-4 text-zinc-400">
-              Are you looking for a{" "}
-              <span className="text-red-600">solution?</span>
+          <div className="bg-zinc-950 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
+            <div className="text-4xl md:text-6xl pb-8 leading-tight font-extralight text-zinc-300">
+              Looking for a <span className="text-red-600">solution?</span>
             </div>
-            <div className="text-6xl md:text-7xl leading-tight font-bold text-zinc-200">
-              <span className="font-extralight text-zinc-400">Well, </span>
-              I&apos;m a full-stack problem-solver.
+            <div className="text-6xl md:text-8xl leading-tight font-bold text-zinc-100">
+              I&apos;m a full-stack{" "}
+              <span className="text-red-600">problem-solver.</span>
             </div>
           </div>
           {/*End Hero Card*/}
           <div className="px-2" />
           {/*Get In Touch Card*/}
-          <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
-            <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-400">
-              Got an <span className="text-red-600">idea?</span>
+          <div className="bg-zinc-950 my-4 flex flex-col justify-between text-center rounded-3xl md:w-1/3 p-10 md:p-24">
+            <div className="text-4xl md:text-6xl text-center leading-tight font-extralight pb-10 md:pb-0 text-zinc-300">
+              Got an{" "}
+              <span className="text-red-600 text-5xl md:text-7xl">idea?</span>
             </div>
-            <div className="py-1" />
-            <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-zinc-900 hover:text-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
+
+            <button className="text-4xl md:text-5xl bg-zinc-100 transition-colors hover:bg-zinc-950 hover:text-zinc-100 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-950">
               Get In Touch
             </button>
           </div>
@@ -130,12 +130,12 @@ export default function Home() {
         {/* ------------------------------------ABOUT------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
-          <div className="hidden md:flex bg-zinc-900 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
-            <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-400">
-              Born, Reared & <span className="text-red-600">Based</span> in
+          <div className="hidden md:flex bg-zinc-950 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
+            <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-300">
+              Born, Raised & <span className="text-red-600">Based</span> in
             </div>
 
-            <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-200">
+            <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-100">
               The Bay Area
             </div>
           </div>
@@ -145,10 +145,10 @@ export default function Home() {
             <div className="flex flex-row justify-between md:px-0">
               {/*LinkedIn Card*/}
 
-              <div className="bg-zinc-900 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full">
+              <div className="bg-zinc-950 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-100 rounded-3xl py-6 w-full">
                 <Link
                   href="https://www.linkedin.com/in/oconnorjohnson"
-                  className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:text-zinc-200 hover:bg-zinc-900 transition-colors"
+                  className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-950 rounded-3xl py-6 bg-zinc-100 hover:text-zinc-100 hover:bg-zinc-950 transition-colors"
                 >
                   <FaLinkedin className="pr-2 text-3xl" />
                   <div>LinkedIn</div>
@@ -158,10 +158,13 @@ export default function Home() {
               {/*End LinkedIn Card*/}
               <div className="px-2" />
               {/*Github Card*/}
-              <div className="bg-zinc-900 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-200 rounded-3xl py-6 w-full">
+              <div
+                id="socials"
+                className="bg-zinc-950 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-100 rounded-3xl py-6 w-full"
+              >
                 <Link
                   href="https://www.github.com/oconnorjohnson"
-                  className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:bg-zinc-900 hover:text-zinc-200 transition-colors"
+                  className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-950 rounded-3xl py-6 bg-zinc-100 hover:bg-zinc-950 hover:text-zinc-100 transition-colors"
                 >
                   <FaGithubSquare className="pr-2 text-3xl" />
                   <div>Github</div>
@@ -172,20 +175,20 @@ export default function Home() {
             </div>
             <div className="py-2 md:hidden" />
             {/*Born and Based Card*/}
-            <div className="flex bg-zinc-900 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12 md:hidden">
-              <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
-                Born, Reared & <span className="text-red-600">Based</span> in
+            <div className="flex bg-zinc-950 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12 md:hidden">
+              <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-300">
+                Born, Raised & <span className="text-red-600">Based</span> in
               </div>
               <div className="py-1" />
-              <div className="text-3xl md:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-200">
+              <div className="text-3xl md:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-100">
                 The Bay Area
               </div>
             </div>
             {/*End Born and Based Card*/}
             <div className="py-2" />
             {/*About Card*/}
-            <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
-              <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-400">
+            <div className="bg-zinc-950 rounded-3xl p-10 md:p-12">
+              <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-300">
                 I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
                 <span className="text-red-600">
                   I love learning new languages.
@@ -193,8 +196,8 @@ export default function Home() {
                 Currently, I&apos;m studying Swift, Objective-C, Spanish &
                 French.
               </div>
-              <div className="text-3xl text-start md:text-end md:text-5xl leading-tight font-semibold text-zinc-200">
-                Let&apos;s build robust & *accessible* solutions{" "}
+              <div className="text-3xl text-start md:text-end md:text-5xl leading-tight font-semibold text-zinc-100">
+                Let&apos;s build robust & accessible solutions{" "}
                 <br className="hidden lg:block" /> at the speed of light.
               </div>
             </div>
@@ -207,35 +210,35 @@ export default function Home() {
         <div className="flex flex-col md:flex-row ">
           {/*Testimonial Card*/}
           <div className="px-4 md:px-0 w-full">
-            <div className="p-10 md:p-12 w-full min-w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
+            <div className="py-8 px-4 md:p-12 w-full min-w-full rounded-3xl bg-zinc-950 flex flex-col items-center">
               <div className="relative w-full flex items-center justify-between">
                 <button
-                  className="text-6xl text-zinc-200 hover:text-red-600 transition-colors"
+                  className="text-6xl text-zinc-100 hover:text-red-600 transition-colors"
                   aria-label="Previous quote"
                   onClick={prevTestimonial}
                 >
                   <MdArrowCircleLeft />
                 </button>
-                <div className="flex flex-col justify-center items-center px-4">
-                  <blockquote className="text-4xl text-center font-semibold leading-snug">
+                <div className="flex flex-col justify-center items-center px-2 md:px-4">
+                  <blockquote className="text-xl md:text-4xl text-center font-semibold leading-snug">
                     {testimonials[currentTestimonial].quote}
                   </blockquote>
-                  <div className="mt-6 flex text-center">
+                  <div className="pt-2 md:pt-6 flex text-center">
                     <div className="">
-                      <h4 className="text-xl text-zinc-200">
+                      <h4 className="text-lg md:text-xl text-zinc-100">
                         {testimonials[currentTestimonial].name}
                       </h4>
-                      <h4 className="text-md text-zinc-400">
+                      <h4 className="text-sm md:text-md text-zinc-300">
                         {testimonials[currentTestimonial].position}
                       </h4>
-                      <p className="text-lg text-red-600">
+                      <p className="text-md md:text-lg text-red-600">
                         {testimonials[currentTestimonial].company}
                       </p>
                     </div>
                   </div>
                 </div>
                 <button
-                  className="text-6xl text-zinc-200 hover:text-red-600 transition-colors"
+                  className="text-6xl text-zinc-100 hover:text-red-600 transition-colors"
                   aria-label="Next quote"
                   onClick={nextTestimonial}
                 >
@@ -255,13 +258,13 @@ export default function Home() {
         <div className="flex flex-col md:flex-row px-4 md:px-0">
           {/*PocketPR Card*/}
           <Link href="/">
-            <div className="flex flex-col bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+            <div className="flex flex-col bg-zinc-950 hover:bg-zinc-800 rounded-3xl h-full p-12">
               <div className="flex flex-row">
                 <div className="flex flex-col">
-                  <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                  <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
                     PocketPR
                   </h1>
-                  <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                  <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
                     Co-Founder & CEO
                   </h2>
                 </div>
@@ -281,13 +284,13 @@ export default function Home() {
           {/*Projects & Blog Grid*/}
           <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
             <Link href="/">
-              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+              <div className="bg-zinc-950 hover:bg-zinc-800 rounded-3xl h-full p-12">
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
                       Blog Post One
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -307,13 +310,13 @@ export default function Home() {
               </div>
             </Link>
             <Link href="/">
-              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+              <div className="bg-zinc-950 hover:bg-zinc-800 rounded-3xl h-full p-12">
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
                       CARES
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -333,13 +336,13 @@ export default function Home() {
               </div>
             </Link>
             <Link href="/">
-              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+              <div className="bg-zinc-950 hover:bg-zinc-800 rounded-3xl h-full p-12">
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
                       Portfolio
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -359,13 +362,13 @@ export default function Home() {
               </div>
             </Link>
             <Link href="/">
-              <div className="bg-zinc-900 hover:bg-zinc-800 rounded-3xl h-full p-12">
+              <div className="bg-zinc-950 hover:bg-zinc-800 rounded-3xl h-full p-12">
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-200 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
                       Blog Post Two
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-400">
+                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -391,8 +394,8 @@ export default function Home() {
 
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
         <div className="px-4 md:px-0">
-          <div className="p-12 py-12 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-900">
-            <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
+          <div className="p-8 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-950">
+            <div className="flex justify-start pb-4 md:p-4 mx-auto font-semibold">
               Interested in working{" "}
               <span className="text-red-600 hover:text-red-600 pl-2">
                 {" "}
@@ -401,7 +404,7 @@ export default function Home() {
             </div>
             <Link
               href="mailto:recruitme@danielojohnson.com"
-              className="flex justify-center text-md md:text-3xl text-red-600 hover:text-zinc-200 rounded-3xl py-4 px-12 bg-zinc-200 hover:bg-zinc-900 transition-colors font-semibold"
+              className="flex justify-center text-sm md:text-3xl text-red-600 hover:text-zinc-100 rounded-3xl py-4 px-12 bg-zinc-100 hover:bg-zinc-950 transition-colors font-semibold"
             >
               recruitme@danielojohnson.com
             </Link>
@@ -410,14 +413,14 @@ export default function Home() {
         <div className="py-2" />
         {/* ------------------------------------FOOTER------------------------------------ */}
 
-        <div className="mx-4 lg:mx-0 p-4 flex justify-between rounded-3xl bg-zinc-900">
+        <div className="mx-4 lg:mx-0 p-4 flex justify-between rounded-3xl bg-zinc-950">
           <Link
             href="/"
-            className="pl-4 text-lg md:text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
+            className="pl-4 text-lg md:text-2xl text-zinc-100 hover:text-white transition-colors font-semibold"
           >
             daniel <span className="text-red-600 pl-0.5"> j.</span>
           </Link>
-          <div className="pr-4 text-lg md:text-2xl text-zinc-200 transition-colors font-semibold">
+          <div className="pr-4 text-lg md:text-2xl text-zinc-100 transition-colors font-semibold">
             Let&apos;s build, <span className="text-red-600">quickly.</span>
           </div>
         </div>
