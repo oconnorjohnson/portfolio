@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
-import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
@@ -21,13 +20,15 @@ export default function Home() {
       quote:
         "This is going to be a nice quote from Kevin. He works at Apple! Cool.",
       name: "Kevin Carney",
-      position: "QA Engineer @ Apple",
+      position: "QA Engineer",
+      company: "Apple, Inc.",
     },
     {
       quote:
         "This is going to be a nice quote from Keegan. He works at PocketPR!",
       name: "Keegan Anglim",
-      position: "CTO @ PocketPR",
+      position: "Co-Founder & CTO",
+      company: "PocketPR",
     },
   ];
 
@@ -50,24 +51,21 @@ export default function Home() {
         <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-900">
           <Link
             href="/"
-            className="pl-4 text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
+            className="pl-4 text-2xl text-zinc-200 hover:text-red-600 transition-colors font-semibold"
           >
             daniel{" "}
-            <span className="text-violet-600 hover:text-violet-600 pl-0.5">
-              {" "}
-              j.
-            </span>
+            <span className="text-red-600 hover:text-red-600 pl-0.5"> j.</span>
           </Link>
           <div className="hidden md:flex md:justify-end">
             <Link
               href="#"
-              className="pr-8 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
+              className="pr-8 text-2xl text-zinc-200 transition-colors hover:text-red-600 font-semibold"
             >
               works
             </Link>
             <Link
               href="#"
-              className="pr-4 text-2xl text-zinc-200 transition-colors hover:text-white font-semibold"
+              className="pr-4 text-2xl text-zinc-200 transition-colors hover:text-red-600 font-semibold"
             >
               contact
             </Link>
@@ -88,13 +86,13 @@ export default function Home() {
             </button>
             <Link
               href="#"
-              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-white font-bold"
+              className="text-6xl py-4 text-zinc-200 transition-colors hover:text-red-600 font-bold"
             >
               works
             </Link>
             <Link
               href="#"
-              className="text-6xl py-4 pb-10 text-zinc-200 transition-colors hover:text-white font-bold"
+              className="text-6xl py-4 pb-10 text-zinc-200 transition-colors hover:text-red-600 font-bold"
             >
               contact
             </Link>
@@ -107,7 +105,7 @@ export default function Home() {
           <div className="bg-zinc-900 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
             <div className="text-4xl md:text-6xl leading-tight font-extralight pb-4 text-zinc-400">
               Are you looking for a{" "}
-              <span className="text-violet-600">solution?</span>
+              <span className="text-red-600">solution?</span>
             </div>
             <div className="text-6xl md:text-7xl leading-tight font-bold text-zinc-200">
               <span className="font-extralight text-zinc-400">Well, </span>
@@ -119,7 +117,7 @@ export default function Home() {
           {/*Get In Touch Card*/}
           <div className="bg-zinc-900 my-4 text-center rounded-3xl md:w-1/3 p-10 md:p-24">
             <div className="text-4xl md:text-5xl leading-tight font-extralight pb-6 pt-2 text-zinc-400">
-              Got an <span className="text-violet-600">idea?</span>
+              Got an <span className="text-red-600">idea?</span>
             </div>
             <div className="py-1" />
             <button className="text-3xl md:text-4xl bg-zinc-200 transition-colors hover:bg-zinc-900 hover:text-zinc-200 py-8 px-10 rounded-3xl leading-tight font-bold text-zinc-900">
@@ -134,7 +132,7 @@ export default function Home() {
           {/*Born and Based Card*/}
           <div className="hidden md:flex bg-zinc-900 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-400">
-              Born, Reared & <span className="text-violet-600">Based</span> in
+              Born, Reared & <span className="text-red-600">Based</span> in
             </div>
 
             <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-200">
@@ -176,7 +174,7 @@ export default function Home() {
             {/*Born and Based Card*/}
             <div className="flex bg-zinc-900 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12 md:hidden">
               <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-400">
-                Born, Reared & <span className="text-violet-600">Based</span> in
+                Born, Reared & <span className="text-red-600">Based</span> in
               </div>
               <div className="py-1" />
               <div className="text-3xl md:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-200">
@@ -189,7 +187,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl p-10 md:p-12">
               <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-400">
                 I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
-                <span className="text-violet-600">
+                <span className="text-red-600">
                   I love learning new languages.
                 </span>{" "}
                 Currently, I&apos;m studying Swift, Objective-C, Spanish &
@@ -210,29 +208,38 @@ export default function Home() {
           {/*Testimonial Card*/}
           <div className="px-4 md:px-0 w-full">
             <div className="p-10 md:p-12 w-full min-w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
-              <div className="relative w-full flex items-center justify-between p-8">
-                <button aria-label="Previous quote">
-                  {/* add left arrow react icon*/}
+              <div className="relative w-full flex items-center justify-between">
+                <button
+                  className="text-6xl text-zinc-200 hover:text-red-600 transition-colors"
+                  aria-label="Previous quote"
+                  onClick={prevTestimonial}
+                >
+                  <MdArrowCircleLeft />
                 </button>
-                <div className="w-full max-w-3xl mx-4">
-                  <div className="p-4">
-                    <blockquote className="text-3xl font-semibold leading-snug">
-                      "The customer service I received was exceptional. The
-                      support team went above and beyond to address my
-                      concerns."
-                    </blockquote>
-                    <div className="mt-6 flex items-center">
-                      <div className="">
-                        <h4 className="font-medium">Jules Winnfield</h4>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
-                          CEO, Acme Inc
-                        </p>
-                      </div>
+                <div className="flex flex-col justify-center items-center px-4">
+                  <blockquote className="text-4xl text-center font-semibold leading-snug">
+                    {testimonials[currentTestimonial].quote}
+                  </blockquote>
+                  <div className="mt-6 flex text-center">
+                    <div className="">
+                      <h4 className="text-xl text-zinc-200">
+                        {testimonials[currentTestimonial].name}
+                      </h4>
+                      <h4 className="text-md text-zinc-400">
+                        {testimonials[currentTestimonial].position}
+                      </h4>
+                      <p className="text-lg text-red-600">
+                        {testimonials[currentTestimonial].company}
+                      </p>
                     </div>
                   </div>
                 </div>
-                <button aria-label="Next quote">
-                  {/*add right arrow react icon*/}
+                <button
+                  className="text-6xl text-zinc-200 hover:text-red-600 transition-colors"
+                  aria-label="Next quote"
+                  onClick={nextTestimonial}
+                >
+                  <MdArrowCircleRight />
                 </button>
               </div>
             </div>
@@ -387,14 +394,14 @@ export default function Home() {
           <div className="p-12 py-12 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-900">
             <div className="flex justify-start py-2 md:p-4 mx-auto font-semibold">
               Interested in working{" "}
-              <span className="text-violet-600 hover:text-violet-600 pl-2">
+              <span className="text-red-600 hover:text-red-600 pl-2">
                 {" "}
                 together?
               </span>
             </div>
             <Link
               href="mailto:recruitme@danielojohnson.com"
-              className="flex justify-center text-md md:text-3xl text-violet-600 rounded-3xl py-4 px-12 hover:text-black bg-zinc-200 transition-colors font-semibold"
+              className="flex justify-center text-md md:text-3xl text-red-600 hover:text-zinc-200 rounded-3xl py-4 px-12 bg-zinc-200 hover:bg-zinc-900 transition-colors font-semibold"
             >
               recruitme@danielojohnson.com
             </Link>
@@ -408,14 +415,10 @@ export default function Home() {
             href="/"
             className="pl-4 text-lg md:text-2xl text-zinc-200 hover:text-white transition-colors font-semibold"
           >
-            daniel{" "}
-            <span className="text-violet-600 hover:text-violet-600 pl-0.5">
-              {" "}
-              j.
-            </span>
+            daniel <span className="text-red-600 pl-0.5"> j.</span>
           </Link>
           <div className="pr-4 text-lg md:text-2xl text-zinc-200 transition-colors font-semibold">
-            Let&apos;s build, <span className="text-violet-600">quickly.</span>
+            Let&apos;s build, <span className="text-red-600">quickly.</span>
           </div>
         </div>
         <div className="py-2" />
