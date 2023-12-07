@@ -147,28 +147,28 @@ export default function Home() {
             <div className="flex flex-row justify-between md:px-0">
               {/*LinkedIn Card*/}
 
-              <Link
-                href="https://www.linkedin.com/in/oconnorjohnson"
-                className="bg-zinc-900 transition-colors hover:bg-zinc-200 flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full"
-              >
-                <div className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200   ">
+              <div className="bg-zinc-900 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-200 rounded-3xl py-6 w-full">
+                <Link
+                  href="https://www.linkedin.com/in/oconnorjohnson"
+                  className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:text-zinc-200 hover:bg-zinc-900 transition-colors"
+                >
                   <FaLinkedin className="pr-2 text-3xl" />
                   <div>LinkedIn</div>
-                </div>
-              </Link>
+                </Link>
+              </div>
 
               {/*End LinkedIn Card*/}
               <div className="px-2" />
               {/*Github Card*/}
-              <Link
-                href="https://www.github.com/oconnorjohnson"
-                className="bg-zinc-900 flex flex-row justify-center transition-colors hover:bg-zinc-200 text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-200 rounded-3xl py-6 w-full"
-              >
-                <div className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 ">
+              <div className="bg-zinc-900 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-200 rounded-3xl py-6 w-full">
+                <Link
+                  href="https://www.github.com/oconnorjohnson"
+                  className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-900 rounded-3xl py-6 bg-zinc-200 hover:bg-zinc-900 hover:text-zinc-200 transition-colors"
+                >
                   <FaGithubSquare className="pr-2 text-3xl" />
                   <div>Github</div>
-                </div>
-              </Link>
+                </Link>
+              </div>
 
               {/*End Github Card*/}
             </div>
@@ -210,56 +210,29 @@ export default function Home() {
           {/*Testimonial Card*/}
           <div className="px-4 md:px-0 w-full">
             <div className="p-10 md:p-12 w-full min-w-full rounded-3xl bg-zinc-900 flex flex-col items-center">
-              <div className="flex flex-col-3">
-                <div className="text-left">
-                  <blockquote className="mt-2 text-zinc-200 font-semibold text-3xl md:text-4xl w-full">
-                    {testimonials[currentTestimonial].quote}
-                  </blockquote>
-                  <div className="py-4" />
-                  <div className="flex flex-col md:grid md:grid-cols-3">
-                    <button
-                      onClick={prevTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-violet-600"
-                    >
-                      <MdArrowCircleLeft />
-                    </button>
-                    <div className="flex flex-row justify-start pl-24 ">
-                      {/* <div className="flex flex-col justify-center">
-                        <div className="h-14 w-14 mr-4">
-                          <Image
-                            height="100"
-                            width="100"
-                            alt="User avatar"
-                            src="/avatar.png"
-                          />
-                        </div>
-                      </div> */}
-                      <div className="px-2" />
-                      <div className="flex flex-col ">
-                        <h2 className="text-2xl md:text-3xl text-zinc-200">
-                          {testimonials[currentTestimonial].name}
-                        </h2>
-                        <div className="py-1" />
-                        <p className="text-xl md:text-2xl text-zinc-400">
-                          {testimonials[currentTestimonial].position}
+              <div className="relative w-full flex items-center justify-between p-8">
+                <button aria-label="Previous quote">
+                  {/* add left arrow react icon*/}
+                </button>
+                <div className="w-full max-w-3xl mx-4">
+                  <div className="p-4">
+                    <blockquote className="text-3xl font-semibold leading-snug">
+                      "The customer service I received was exceptional. The
+                      support team went above and beyond to address my
+                      concerns."
+                    </blockquote>
+                    <div className="mt-6 flex items-center">
+                      <div className="">
+                        <h4 className="font-medium">Jules Winnfield</h4>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          CEO, Acme Inc
                         </p>
                       </div>
                     </div>
-                    <button
-                      onClick={nextTestimonial}
-                      className="hidden md:flex flex-col items-center justify-center text-6xl hover:text-violet-600"
-                    >
-                      <MdArrowCircleRight />
-                    </button>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-row text-6xl md:hidden">
-                <button onClick={prevTestimonial}>
-                  <MdArrowCircleLeft className="pr-4" />
-                </button>
-                <button onClick={nextTestimonial}>
-                  <MdArrowCircleRight className="pr-4" />
+                <button aria-label="Next quote">
+                  {/*add right arrow react icon*/}
                 </button>
               </div>
             </div>
