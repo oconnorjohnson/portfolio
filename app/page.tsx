@@ -7,7 +7,7 @@ import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/legacy/image";
-import { easeIn, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -19,6 +19,11 @@ export default function Home() {
     } else {
       document.body.style.overflow = "auto";
     }
+  };
+
+  const sidebar = {
+    open: { x: 0 },
+    closed: { x: "100%" },
   };
 
   const testimonials = [
@@ -78,35 +83,48 @@ export default function Home() {
             </Link>
           </div>
 
-          <button
+          <motion.button
             onClick={toggleSidebar}
             className="flex justify-end pr-4 text-3xl md:hidden"
+            whileHover={{ rotate: "180deg" }}
+            whileTap={{ scale: 0.9 }}
           >
             <HiMenu />
-          </button>
+          </motion.button>
         </div>
 
         {/* ------------------------------------TOGGLE-MENU------------------------------------ */}
-        {isSidebarOpen && (
-          <div className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-800 flex flex-col items-start pl-10 justify-end">
-            <button onClick={toggleSidebar} className="mb-4">
-              <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
-            </button>
-            <Link
-              href="#"
-              className="text-6xl py-4 text-zinc-100 transition-colors  font-bold"
+        <AnimatePresence>
+          {isSidebarOpen && (
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: "0%" }}
+              exit={{ x: "100%" }}
+              transition={{
+                type: "spring",
+                stiffness: 75,
+                duration: 0.1,
+              }}
+              className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full min-w-screen min-h-screen bg-zinc-800 flex flex-col items-start pl-10 justify-end"
             >
-              works
-            </Link>
-            <Link
-              href="#"
-              className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
-            >
-              contact
-            </Link>
-          </div>
-        )}
-
+              <button onClick={toggleSidebar} className="mb-4">
+                <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
+              </button>
+              <Link
+                href="#"
+                className="text-6xl py-4 text-zinc-100 transition-colors  font-bold"
+              >
+                works
+              </Link>
+              <Link
+                href="#"
+                className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
+              >
+                contact
+              </Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
         {/* ------------------------------------HERO------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Hero Card*/}
