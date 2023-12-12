@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { IoIosCloseCircle } from "react-icons/io";
@@ -7,7 +7,14 @@ import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/legacy/image";
-import { scroll, inView, useScroll, useInView, motion } from "framer-motion";
+import {
+  scroll,
+  inView,
+  useScroll,
+  useInView,
+  useAnimation,
+  motion,
+} from "framer-motion";
 
 const fadeInVars = {
   initial: {
@@ -58,6 +65,34 @@ export default function Home() {
       (currentTestimonial - 1 + testimonials.length) % testimonials.length
     );
   };
+
+  const controls = useAnimation();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start("visible");
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1.0, // 1.0 means that the threshold is 100% - the observer callback will be invoked when 100% of the target element is in view
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [controls]);
 
   return (
     <>
@@ -146,11 +181,12 @@ export default function Home() {
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
           <motion.div
-            variants={fadeInVars}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
             }}
             className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12"
           >
