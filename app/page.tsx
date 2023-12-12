@@ -158,7 +158,7 @@ export default function Home() {
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
           <motion.div
-            initial={{ opacity: 0, x: -300 }}
+            initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: "some" }}
             transition={{
@@ -184,7 +184,7 @@ export default function Home() {
               {/*LinkedIn Card*/}
 
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="px-2" />
               {/*Github Card*/}
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -237,7 +237,7 @@ export default function Home() {
             <div className="py-2 md:hidden" />
             {/*Born and Based Card*/}
             <motion.div
-              initial={{ opacity: 0, x: 300 }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
@@ -260,7 +260,7 @@ export default function Home() {
             <div className="py-2" />
             {/*About Card*/}
             <motion.div
-              initial={{ opacity: 0, x: 300 }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
@@ -294,7 +294,7 @@ export default function Home() {
           {/*Testimonial Card*/}
           <div className="px-4 md:px-0 w-full">
             <motion.div
-              initial={{ opacity: 0, x: -300 }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
@@ -357,9 +357,9 @@ export default function Home() {
           {/*PocketPR Card*/}
           <Link href="/">
             <motion.div
-              initial={{ opacity: 0, x: -300 }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true, amount: "some" }}
               transition={{
                 ease: "easeIn",
                 type: "spring",
@@ -394,7 +394,7 @@ export default function Home() {
           <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -431,7 +431,7 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -468,7 +468,7 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -505,7 +505,7 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
@@ -548,9 +548,9 @@ export default function Home() {
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
         <div className="px-4 md:px-0">
           <motion.div
-            initial={{ opacity: 0, x: -300 }}
+            initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
             transition={{
               ease: "easeIn",
               type: "spring",
@@ -575,7 +575,7 @@ export default function Home() {
         {/* ------------------------------------FOOTER------------------------------------ */}
 
         <motion.div
-          initial={{ opacity: 0, x: 300 }}
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: "all" }}
           transition={{
