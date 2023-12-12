@@ -105,7 +105,7 @@ export default function Home() {
                 stiffness: 75,
                 duration: 0.1,
               }}
-              className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full min-w-screen min-h-screen bg-zinc-800 flex flex-col items-start pl-10 justify-end"
+              className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full min-w-screen min-h-screen bg-zinc-800 flex flex-col items-start pl-10 pt-24 justify-start"
             >
               <button onClick={toggleSidebar} className="mb-4">
                 <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
@@ -593,7 +593,7 @@ export default function Home() {
             daniel <span className="text-red-500 pl-0.5"> j.</span>
           </Link>
           <div className="pr-4 text-lg md:text-2xl text-zinc-100 transition-colors font-semibold">
-            Let&apos;s build, <span className="text-red-500">quickly.</span>
+            Let&apos;s <span className="text-red-500">cook.</span>
           </div>
         </motion.div>
         <div className="py-2" />
