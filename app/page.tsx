@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="mx-auto lg:w-3/4 2xl:w-2/3">
+      <main className="mx-auto lg:w-3/4 2xl:w-2/3 overflow-x-hidden">
         {/* ------------------------------------NAVBAR------------------------------------ */}
         <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-800">
           <Link
@@ -184,8 +184,8 @@ export default function Home() {
               {/*LinkedIn Card*/}
 
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
@@ -210,8 +210,8 @@ export default function Home() {
               <div className="px-2" />
               {/*Github Card*/}
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
@@ -237,8 +237,8 @@ export default function Home() {
             <div className="py-2 md:hidden" />
             {/*Born and Based Card*/}
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
                 ease: "easeIn",
@@ -260,8 +260,8 @@ export default function Home() {
             <div className="py-2" />
             {/*About Card*/}
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
                 ease: "easeIn",
@@ -294,8 +294,8 @@ export default function Home() {
           {/*Testimonial Card*/}
           <div className="px-4 md:px-0 w-full">
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: "all" }}
               transition={{
                 ease: "easeIn",
@@ -357,8 +357,8 @@ export default function Home() {
           {/*PocketPR Card*/}
           <Link href="/">
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: "some" }}
               transition={{
                 ease: "easeIn",
@@ -394,8 +394,8 @@ export default function Home() {
           <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
@@ -431,8 +431,8 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
@@ -468,8 +468,8 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
@@ -505,8 +505,8 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "10%" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
