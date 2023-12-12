@@ -16,20 +16,6 @@ import {
   motion,
 } from "framer-motion";
 
-const fadeInVars = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 1.0,
-    },
-  },
-};
-
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -65,34 +51,6 @@ export default function Home() {
       (currentTestimonial - 1 + testimonials.length) % testimonials.length
     );
   };
-
-  const controls = useAnimation();
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          controls.start("visible");
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 1.0, // 1.0 means that the threshold is 100% - the observer callback will be invoked when 100% of the target element is in view
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [controls]);
 
   return (
     <>
@@ -180,16 +138,7 @@ export default function Home() {
         {/* ------------------------------------ABOUT------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
-          <motion.div
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={{
-              visible: { opacity: 1 },
-              hidden: { opacity: 0 },
-            }}
-            className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12"
-          >
+          <div className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
             <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-300">
               Born, Raised & <span className="text-red-600">Based</span> in
             </div>
@@ -197,7 +146,7 @@ export default function Home() {
             <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-100">
               The Bay Area
             </div>
-          </motion.div>
+          </div>
           {/*End Born and Based Card*/}
           <div className="hidden md:block p-2" />
           <div className="flex flex-col md:w-2/3">
