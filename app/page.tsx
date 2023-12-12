@@ -7,7 +7,21 @@ import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/legacy/image";
-import { scroll, inView, useScroll, useInView } from "framer-motion";
+import { scroll, inView, useScroll, useInView, motion } from "framer-motion";
+
+const fadeInVars = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.0,
+    },
+  },
+};
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -131,7 +145,15 @@ export default function Home() {
         {/* ------------------------------------ABOUT------------------------------------ */}
         <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
           {/*Born and Based Card*/}
-          <div className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12">
+          <motion.div
+            variants={fadeInVars}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12"
+          >
             <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-300">
               Born, Raised & <span className="text-red-600">Based</span> in
             </div>
@@ -139,7 +161,7 @@ export default function Home() {
             <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-100">
               The Bay Area
             </div>
-          </div>
+          </motion.div>
           {/*End Born and Based Card*/}
           <div className="hidden md:block p-2" />
           <div className="flex flex-col md:w-2/3">
