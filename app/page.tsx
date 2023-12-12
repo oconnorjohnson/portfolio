@@ -14,6 +14,11 @@ export default function Home() {
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+    if (!isSidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   };
 
   const testimonials = [
@@ -83,7 +88,7 @@ export default function Home() {
 
         {/* ------------------------------------TOGGLE-MENU------------------------------------ */}
         {isSidebarOpen && (
-          <div className="fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-800 flex flex-col items-start pl-10 justify-end">
+          <div className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full bg-zinc-800 flex flex-col items-start pl-10 justify-end">
             <button onClick={toggleSidebar} className="mb-4">
               <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
             </button>
