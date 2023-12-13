@@ -67,7 +67,7 @@ export default function Home() {
             daniel <span className="text-red-500  pl-0.5"> j.</span>
           </Link>
 
-          <div className="hidden md:flex md:justify-end">
+          <div className="hidden lg:flex lg:justify-end">
             <Link
               href="#"
               className="pr-8 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
@@ -85,7 +85,7 @@ export default function Home() {
 
           <motion.button
             onClick={toggleSidebar}
-            className="flex justify-end pr-4 text-3xl md:hidden"
+            className="flex justify-end pr-4 text-3xl lg:hidden"
             whileHover={{ rotate: "180deg" }}
             whileTap={{ scale: 0.9 }}
           >
@@ -126,13 +126,13 @@ export default function Home() {
           )}
         </AnimatePresence>
         {/* ------------------------------------HERO------------------------------------ */}
-        <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
+        <div className="lg:flex lg:flex-row lg:justify-between px-4 lg:px-0">
           {/*Hero Card*/}
-          <div className="bg-zinc-800 my-4 flex flex-col justify-between rounded-3xl md:w-2/3 p-10 md:px-16 md:py-20">
-            <div className="text-4xl md:text-6xl pb-8 leading-tight font-extralight text-zinc-300">
+          <div className="bg-zinc-800 my-4 flex flex-col justify-between rounded-3xl lg:w-2/3 p-10 lg:px-16 lg:py-20">
+            <div className="text-4xl lg:text-5xl xl:text-6xl pb-8 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
               Looking for a <span className="text-red-500">solution?</span>
             </div>
-            <div className="text-6xl md:text-8xl leading-tight font-bold text-zinc-100">
+            <div className="text-6xl xl:text-8xl text-start sm:text-center lg:text-start font-bold text-zinc-100">
               I&apos;m a full-stack{" "}
               <span className="text-red-500">problem-solver.</span>
             </div>
@@ -140,12 +140,12 @@ export default function Home() {
           {/*End Hero Card*/}
           <div className="px-2" />
           {/*Get In Touch Card*/}
-          <div className="bg-zinc-800 my-4 flex flex-col justify-between text-center rounded-3xl md:w-1/3 p-10 md:p-24">
-            <div className="text-4xl md:text-6xl text-center leading-tight font-extralight pb-10 md:pb-0 text-zinc-300">
+          <div className="bg-zinc-800 my-4 flex flex-col justify-around items-center rounded-3xl lg:w-1/3 px-10 pt-10 lg:pt-20 xl:p-24">
+            <div className="text-4xl lg:text-6xl text-center  font-extralight  text-zinc-300">
               Got an <span className="text-red-500">idea?</span>
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
-              <button className="text-4xl md:text-5xl bg-zinc-100 transition-colors py-8 rounded-3xl leading-tight font-bold text-zinc-800">
+              <button className="text-4xl lg:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
                 Get In Touch
               </button>
             </motion.div>
@@ -155,31 +155,31 @@ export default function Home() {
         </div>
 
         {/* ------------------------------------ABOUT------------------------------------ */}
-        <div className="md:flex md:flex-row md:justify-between px-4 md:px-0">
+        <div className="lg:flex lg:flex-row lg:justify-between px-4 lg:px-0">
           {/*Born and Based Card*/}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
             transition={{
               ease: "easeIn",
               type: "spring",
               duration: 0.8,
             }}
-            className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12"
+            className="hidden lg:flex bg-zinc-800 items-center text-center flex-col justify-around rounded-3xl lg:w-1/3 p-10 lg:p-12"
           >
-            <div className="text-4xl md:text-5xl leading-tight font-extralight  text-zinc-300">
+            <div className="text-4xl xl:text-5xl leading-tight font-extralight  text-zinc-300">
               Born, Raised & <span className="text-red-500">Based</span> in
             </div>
 
-            <div className="text-5xl md:text-6xl  pt-12 px-10 leading-tight font-bold text-zinc-100">
+            <div className="text-5xl lg:text-6xl flex text-center px-10 leading-tight font-bold text-zinc-100">
               The Bay Area
             </div>
           </motion.div>
           {/*End Born and Based Card*/}
-          <div className="hidden md:block p-2" />
-          <div className="flex flex-col md:w-2/3">
-            <div className="flex flex-row justify-between md:px-0">
+          <div className="hidden lg:block p-2" />
+          <div className="flex flex-col lg:w-2/3">
+            <div className="flex flex-row lg:px-0">
               {/*LinkedIn Card*/}
 
               <motion.div
@@ -191,12 +191,12 @@ export default function Home() {
                   type: "spring",
                   duration: 0.8,
                 }}
-                className="bg-zinc-800 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-100 rounded-3xl py-6 w-full"
+                className="bg-zinc-800 transition-colors flex items-center justify-center py-4 sm:py-6 md:py-8 lg:py-10 text-2xl font-bold rounded-3xl w-full"
               >
                 <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.linkedin.com/in/oconnorjohnson"
-                    className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-800 rounded-3xl py-6 bg-zinc-100  transition-colors"
+                    className="flex flex-row justify-center text-center px-4  text-lg lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-4 bg-zinc-100"
                   >
                     <FaLinkedin className="pr-2 text-3xl" />
                     <div>LinkedIn</div>
@@ -216,12 +216,12 @@ export default function Home() {
                   type: "spring",
                   duration: 0.8,
                 }}
-                className="bg-zinc-800 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-100 rounded-3xl py-6 w-full"
+                className="bg-zinc-800 transition-colors flex items-center justify-center py-4 sm:py-6 md:py-8 lg:py-10 text-2xl font-bold rounded-3xl w-full"
               >
                 <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.github.com/oconnorjohnson"
-                    className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-800 rounded-3xl py-6 bg-zinc-100  transition-colors"
+                    className="flex flex-row justify-center text-center px-4  text-lg lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-4 bg-zinc-100"
                   >
                     <FaGithubSquare className="pr-2 text-3xl" />
                     <div>Github</div>
@@ -231,7 +231,7 @@ export default function Home() {
 
               {/*End Github Card*/}
             </div>
-            <div className="py-2 md:hidden" />
+            <div className="py-2 lg:hidden" />
             {/*Born and Based Card*/}
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
@@ -242,13 +242,13 @@ export default function Home() {
                 type: "spring",
                 duration: 0.8,
               }}
-              className="flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12 md:hidden"
+              className="flex bg-zinc-800 text-center flex-col justify-center rounded-3xl lg:w-1/3 p-10 lg:p-12 lg:hidden"
             >
-              <div className="text-3xl md:text-4xl leading-tight font-extralight pb-6 text-zinc-300">
+              <div className="text-3xl lg:text-4xl leading-tight font-extralight pb-6 text-zinc-300">
                 Born, Raised & <span className="text-red-500">Based</span> in
               </div>
               <div className="py-1" />
-              <div className="text-3xl md:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-100">
+              <div className="text-3xl lg:text-4xl px-10 rounded-3xl leading-tight font-bold text-zinc-100">
                 The Bay Area
               </div>
             </motion.div>
@@ -264,19 +264,18 @@ export default function Home() {
                 type: "spring",
                 duration: 0.8,
               }}
-              className="bg-zinc-800 rounded-3xl p-10 md:p-12"
+              className="bg-zinc-800 rounded-3xl p-10 lg:p-12"
             >
-              <div className="text-2xl text-start md:text-end md:text-4xl leading-tight font-extralight pb-4 text-zinc-300">
-                I work with Typescript, React, Next, PostgreSQL & Tailwind CSS.{" "}
+              <div className="text-2xl text-start sm:text-center lg:text-end lg:text-4xl leading-tight font-extralight pb-4 text-zinc-300">
+                I work with Typescript, React, Next, SQL & Tailwind.{" "}
                 <span className="text-red-500">
                   I love learning new languages.
                 </span>{" "}
-                Currently, I&apos;m studying Swift, Objective-C, Spanish &
-                French.
+                Currently, I&apos;m studying Swift & Spanish.
               </div>
-              <div className="text-3xl text-start md:text-end md:text-5xl leading-tight font-semibold text-zinc-100">
-                Let&apos;s build robust & accessible solutions{" "}
-                <br className="hidden lg:block" /> at the speed of light.
+              <div className="text-3xl text-start sm:text-center lg:text-end lg:text-5xl leading-tight font-semibold text-zinc-100">
+                Let&apos;s build robust & accessible solutions at the speed of
+                light.
               </div>
             </motion.div>
             {/*End About Card*/}
@@ -285,9 +284,9 @@ export default function Home() {
 
         {/* ------------------------------------TESTIMONIAL------------------------------------ */}
         <div className="py-2" />
-        <div className="flex flex-col md:flex-row ">
+        <div className="flex flex-col lg:flex-row ">
           {/*Testimonial Card*/}
-          <div className="px-4 md:px-0 w-full">
+          <div className="px-4 lg:px-0 w-full">
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -297,7 +296,7 @@ export default function Home() {
                 type: "spring",
                 duration: 0.8,
               }}
-              className="py-8 px-4 md:p-12 w-full min-w-full rounded-3xl bg-zinc-800 flex flex-col items-center"
+              className="py-8 px-4 lg:p-12 w-full min-w-full rounded-3xl bg-zinc-800 flex flex-col items-center"
             >
               <div className="relative w-full flex items-center justify-between">
                 <motion.div whileHover={{ scale: 1.2 }}>
@@ -309,7 +308,7 @@ export default function Home() {
                     <MdArrowCircleLeft />
                   </button>
                 </motion.div>
-                <div className="flex flex-col justify-center items-center px-2 md:px-4">
+                <div className="flex flex-col justify-center items-center px-2 lg:px-4">
                   <AnimatePresence mode="wait">
                     <motion.blockquote
                       key={currentTestimonial}
@@ -317,7 +316,7 @@ export default function Home() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.1 }}
-                      className="text-xl md:text-4xl text-center font-semibold leading-snug"
+                      className="text-xl sm:text-3xl lg:text-4xl text-center font-semibold leading-snug"
                     >
                       {testimonials[currentTestimonial].quote}
                     </motion.blockquote>
@@ -329,16 +328,16 @@ export default function Home() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.1 }}
-                      className="pt-2 md:pt-6 flex text-center"
+                      className="pt-2 lg:pt-6 flex text-center"
                     >
                       <div className="">
-                        <h4 className="text-lg md:text-xl text-zinc-100">
+                        <h4 className="text-lg sm:text-xl md:text-2xl text-zinc-100">
                           {testimonials[currentTestimonial].name}
                         </h4>
-                        <h4 className="text-sm md:text-md text-zinc-300">
+                        <h4 className="text-sm sm:text-md md:text-lg text-zinc-300">
                           {testimonials[currentTestimonial].position}
                         </h4>
-                        <p className="text-md md:text-lg text-red-500">
+                        <p className="text-md sm:text-lg md:text-xl text-red-500">
                           {testimonials[currentTestimonial].company}
                         </p>
                       </div>
@@ -358,14 +357,14 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="px-2 md:hidden" />
+          <div className="px-2 lg:hidden" />
 
           {/*End Testimonial Card*/}
         </div>
         <div className="py-2" />
 
         {/* ------------------------------------PROJECTS------------------------------------ */}
-        <div className="flex flex-col md:flex-row px-4 md:px-0">
+        <div className="flex flex-col lg:flex-row px-4 lg:px-0">
           {/*PocketPR Card*/}
           <Link href="/">
             <motion.div
@@ -382,28 +381,29 @@ export default function Home() {
             >
               <div className="flex flex-row">
                 <div className="flex flex-col">
-                  <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
+                  <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
                     PocketPR
                   </h1>
-                  <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
+                  <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
                     Co-Founder & CEO
                   </h2>
                 </div>
               </div>
               <Image
-                height="650"
-                width="500"
+                layout="responsive"
+                width="723"
+                height="937"
                 alt="pocketpr screenshot"
-                className="rounded-3xl"
+                className="rounded-3xl object-cover"
                 src="/pocketpr.png"
               />
             </motion.div>
           </Link>
           {/*End PocketPR Card*/}
           <div className="px-2" />
-          <div className="py-2 md:hidden" />
+          <div className="py-2 lg:hidden" />
           {/*Projects & Blog Grid*/}
-          <div className="grid grid-col md:grid-cols-2 gap-4 md:w-2/3">
+          <div className="grid grid-col lg:grid-cols-2 gap-4 lg:w-full">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
@@ -419,10 +419,10 @@ export default function Home() {
               >
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
                       Blog Post One
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
+                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -456,10 +456,10 @@ export default function Home() {
               >
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
                       CARES
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
+                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -493,10 +493,10 @@ export default function Home() {
               >
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
                       Portfolio
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
+                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -530,10 +530,10 @@ export default function Home() {
               >
                 <div className="flex flex-row">
                   <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl md:text-4xl">
+                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
                       Blog Post Two
                     </h1>
-                    <h2 className="font-ultralight text-xl md:text-2xl pt-2 pb-4 text-zinc-300">
+                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
                       Co-Founder & CEO
                     </h2>
                   </div>
@@ -558,7 +558,7 @@ export default function Home() {
         <div className="py-2" />
 
         {/* ------------------------------------CONTACT-FORM------------------------------------ */}
-        <div className="px-4 md:px-0">
+        <div className="px-4 lg:px-0">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -568,16 +568,17 @@ export default function Home() {
               type: "spring",
               duration: 0.8,
             }}
-            className="p-8 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-800"
+            className="p-8 grid grid-cols-1 2xl:grid-cols-2  rounded-3xl bg-zinc-800"
           >
-            <div className="flex justify-start pb-4 md:p-4 mx-auto font-semibold">
+            <div className="flex justify-start text-md sm:text-2xl lg:text-3xl xl:text-4xl 2xl:items-center mx-auto font-semibold">
               Interested in working{" "}
               <span className="text-red-500  pl-2"> together?</span>
             </div>
+            <div className="py-2 2xl:hidden" />
             <motion.div whileHover={{ scale: 0.9 }}>
               <Link
                 href="mailto:recruitme@danielojohnson.com"
-                className="flex justify-center text-sm md:text-3xl text-red-500  rounded-3xl py-4 px-12 bg-zinc-100  transition-colors font-semibold"
+                className="flex justify-center text-md sm:text-2xl lg:text-3xl xl:text-4xl text-red-500  rounded-3xl py-4 px-12 bg-zinc-100  transition-colors font-semibold"
               >
                 recruitme@danielojohnson.com
               </Link>
@@ -600,11 +601,11 @@ export default function Home() {
         >
           <Link
             href="/"
-            className="pl-4 text-lg md:text-2xl text-zinc-100 hover:text-white transition-colors font-semibold"
+            className="pl-4 text-lg sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 hover:text-white transition-colors font-semibold"
           >
             daniel <span className="text-red-500 pl-0.5"> j.</span>
           </Link>
-          <div className="pr-4 text-lg md:text-2xl text-zinc-100 transition-colors font-semibold">
+          <div className="pr-4 text-lg sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 transition-colors font-semibold">
             Let&apos;s <span className="text-red-500">cook.</span>
           </div>
         </motion.div>
