@@ -144,7 +144,7 @@ export default function Home() {
             <div className="text-4xl md:text-6xl text-center leading-tight font-extralight pb-10 md:pb-0 text-zinc-300">
               Got an <span className="text-red-500">idea?</span>
             </div>
-            <motion.div whileHover={{ scale: 1.2 }}>
+            <motion.div whileHover={{ scale: 0.9 }}>
               <button className="text-4xl md:text-5xl bg-zinc-100 transition-colors py-8 rounded-3xl leading-tight font-bold text-zinc-800">
                 Get In Touch
               </button>
@@ -193,7 +193,7 @@ export default function Home() {
                 }}
                 className="bg-zinc-800 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-100 rounded-3xl py-6 w-full"
               >
-                <motion.div whileHover={{ scale: 1.2 }}>
+                <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.linkedin.com/in/oconnorjohnson"
                     className="flex flex-row justify-center text-center px-4  text-lg md:text-2xl font-extralight text-zinc-800 rounded-3xl py-6 bg-zinc-100  transition-colors"
@@ -218,7 +218,7 @@ export default function Home() {
                 }}
                 className="bg-zinc-800 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-100 rounded-3xl py-6 w-full"
               >
-                <motion.div whileHover={{ scale: 1.2 }}>
+                <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.github.com/oconnorjohnson"
                     className="flex flex-row justify-center text-center px-4 text-lg md:text-2xl font-extralight text-zinc-800 rounded-3xl py-6 bg-zinc-100  transition-colors"
@@ -300,7 +300,7 @@ export default function Home() {
               className="py-8 px-4 md:p-12 w-full min-w-full rounded-3xl bg-zinc-800 flex flex-col items-center"
             >
               <div className="relative w-full flex items-center justify-between">
-                <motion.div whileHover={{ scale: 1.4 }}>
+                <motion.div whileHover={{ scale: 0.9 }}>
                   <button
                     className="text-6xl text-zinc-100  transition-colors"
                     aria-label="Previous quote"
@@ -327,7 +327,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <motion.div whileHover={{ scale: 1.4 }}>
+                <motion.div whileHover={{ scale: 0.9 }}>
                   <button
                     className="text-6xl text-zinc-100  transition-colors"
                     aria-label="Next quote"
@@ -556,7 +556,7 @@ export default function Home() {
               Interested in working{" "}
               <span className="text-red-500  pl-2"> together?</span>
             </div>
-            <motion.div whileHover={{ scale: 1.1 }}>
+            <motion.div whileHover={{ scale: 0.9 }}>
               <Link
                 href="mailto:recruitme@danielojohnson.com"
                 className="flex justify-center text-sm md:text-3xl text-red-500  rounded-3xl py-4 px-12 bg-zinc-100  transition-colors font-semibold"
