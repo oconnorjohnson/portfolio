@@ -300,7 +300,7 @@ export default function Home() {
               className="py-8 px-4 md:p-12 w-full min-w-full rounded-3xl bg-zinc-800 flex flex-col items-center"
             >
               <div className="relative w-full flex items-center justify-between">
-                <motion.div whileHover={{ scale: 0.9 }}>
+                <motion.div whileHover={{ scale: 1.2 }}>
                   <button
                     className="text-6xl text-zinc-100  transition-colors"
                     aria-label="Previous quote"
@@ -310,24 +310,42 @@ export default function Home() {
                   </button>
                 </motion.div>
                 <div className="flex flex-col justify-center items-center px-2 md:px-4">
-                  <blockquote className="text-xl md:text-4xl text-center font-semibold leading-snug">
-                    {testimonials[currentTestimonial].quote}
-                  </blockquote>
-                  <div className="pt-2 md:pt-6 flex text-center">
-                    <div className="">
-                      <h4 className="text-lg md:text-xl text-zinc-100">
-                        {testimonials[currentTestimonial].name}
-                      </h4>
-                      <h4 className="text-sm md:text-md text-zinc-300">
-                        {testimonials[currentTestimonial].position}
-                      </h4>
-                      <p className="text-md md:text-lg text-red-500">
-                        {testimonials[currentTestimonial].company}
-                      </p>
-                    </div>
-                  </div>
+                  <AnimatePresence mode="wait">
+                    <motion.blockquote
+                      key={currentTestimonial}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.1 }}
+                      className="text-xl md:text-4xl text-center font-semibold leading-snug"
+                    >
+                      {testimonials[currentTestimonial].quote}
+                    </motion.blockquote>
+                  </AnimatePresence>
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={currentTestimonial}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.1 }}
+                      className="pt-2 md:pt-6 flex text-center"
+                    >
+                      <div className="">
+                        <h4 className="text-lg md:text-xl text-zinc-100">
+                          {testimonials[currentTestimonial].name}
+                        </h4>
+                        <h4 className="text-sm md:text-md text-zinc-300">
+                          {testimonials[currentTestimonial].position}
+                        </h4>
+                        <p className="text-md md:text-lg text-red-500">
+                          {testimonials[currentTestimonial].company}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
                 </div>
-                <motion.div whileHover={{ scale: 0.9 }}>
+                <motion.div whileHover={{ scale: 1.2 }}>
                   <button
                     className="text-6xl text-zinc-100  transition-colors"
                     aria-label="Next quote"
