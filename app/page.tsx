@@ -129,10 +129,10 @@ export default function Home() {
         <div className="lg:flex lg:flex-row lg:justify-between px-4 lg:px-0">
           {/*Hero Card*/}
           <div className="bg-zinc-800 my-4 flex flex-col justify-between rounded-3xl lg:w-2/3 p-10 lg:px-16 lg:py-20">
-            <div className="text-4xl lg:text-5xl xl:text-6xl pb-6 sm:pb-8 xl:pb-0 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
+            <div className="text-3xl lg:text-4xl xl:text-5xl pb-6 sm:pb-8 xl:pb-0 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
               Looking for a <span className="text-red-500">solution?</span>
             </div>
-            <div className="text-6xl xl:text-7xl 2xl:text-8xl text-start sm:text-center lg:text-start font-bold text-zinc-100">
+            <div className="text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl text-start sm:text-center lg:text-start font-bold text-zinc-100">
               I&apos;m a full-stack{" "}
               <span className="text-red-500">problem-solver.</span>
             </div>
@@ -141,11 +141,11 @@ export default function Home() {
           <div className="px-2" />
           {/*Get In Touch Card*/}
           <div className="bg-zinc-800 my-4 flex flex-col justify-around items-center rounded-3xl lg:w-1/3 px-10 pt-10 lg:pt-20 xl:p-24">
-            <div className="text-4xl lg:text-6xl text-center  font-extralight  text-zinc-300">
-              Got an <span className="text-red-500">idea?</span>
+            <div className="text-3xl lg:text-4xl xl:text-5xl text-center  font-extralight  text-zinc-300">
+              Got a <span className="text-red-500">problem?</span>
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
-              <button className="text-4xl lg:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
+              <button className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
                 Get In Touch
               </button>
             </motion.div>
@@ -166,12 +166,12 @@ export default function Home() {
               type: "spring",
               duration: 0.8,
             }}
-            className="hidden lg:flex bg-zinc-800 items-center text-center flex-col justify-around rounded-3xl lg:w-1/3 p-10 lg:p-12"
+            className="hidden lg:flex bg-zinc-800 items-center text-center flex-col justify-center rounded-3xl lg:w-1/3 p-10 lg:p-12"
           >
-            <div className="text-4xl xl:text-5xl leading-tight font-extralight  text-zinc-300">
+            <div className="text-4xl lg:text-5xl leading-tight font-extralight  text-zinc-300">
               Born, Raised & <span className="text-red-500">Based</span> in
             </div>
-
+            <div className="py-8" />
             <div className="text-5xl lg:text-6xl flex text-center px-10 leading-tight font-bold text-zinc-100">
               The Bay Area
             </div>
@@ -196,10 +196,10 @@ export default function Home() {
                 <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.linkedin.com/in/oconnorjohnson"
-                    className="flex flex-row justify-center text-center px-4  text-lg lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-4 bg-zinc-100"
+                    className="flex flex-row justify-center text-center px-3 sm:px-4 text-xl lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-5 bg-zinc-100"
                   >
-                    <FaLinkedin className="pr-2 text-3xl" />
-                    <div>LinkedIn</div>
+                    <FaLinkedin className="hidden sm:block pr-1 sm:pr-2 text-3xl" />
+                    <div className="pt-0 lg:pt-0">LinkedIn</div>
                   </Link>
                 </motion.div>
               </motion.div>
@@ -216,15 +216,15 @@ export default function Home() {
                   type: "spring",
                   duration: 0.8,
                 }}
-                className="bg-zinc-800 transition-colors flex items-center justify-center py-4 sm:py-6 md:py-8 lg:py-10 text-2xl font-bold rounded-3xl w-full"
+                className="bg-zinc-800 transition-colors flex items-center justify-center py-5 sm:py-6 md:py-8 lg:py-10 text-2xl font-bold rounded-3xl w-full"
               >
                 <motion.div whileHover={{ scale: 0.9 }}>
                   <Link
                     href="https://www.github.com/oconnorjohnson"
-                    className="flex flex-row justify-center text-center px-4  text-lg lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-4 bg-zinc-100"
+                    className="flex flex-row justify-center text-center px-3 sm:px-4  text-xl lg:text-2xl font-extralight text-zinc-800 rounded-3xl py-5 bg-zinc-100"
                   >
-                    <FaGithubSquare className="pr-2 text-3xl" />
-                    <div>Github</div>
+                    <FaGithubSquare className="hidden sm:block pr-1 sm:pr-2 text-3xl" />
+                    <div className="pt-0 lg:pt-0">Github</div>
                   </Link>
                 </motion.div>
               </motion.div>
@@ -266,14 +266,14 @@ export default function Home() {
               }}
               className="bg-zinc-800 rounded-3xl p-10 lg:p-12"
             >
-              <div className="text-2xl text-start sm:text-center lg:text-end lg:text-4xl leading-tight font-extralight pb-4 text-zinc-300">
+              <div className="text-xl sm:text-2xl text-start sm:text-center lg:text-end lg:text-4xl leading-tight font-extralight pb-4 text-zinc-300">
                 I work with Typescript, React, Next, SQL & Tailwind.{" "}
                 <span className="text-red-500">
                   I love learning new languages.
                 </span>{" "}
                 Currently, I&apos;m studying Swift & Spanish.
               </div>
-              <div className="text-3xl text-start sm:text-center lg:text-end lg:text-5xl leading-tight font-semibold text-zinc-100">
+              <div className="text-2xl sm:text-3xl text-start sm:text-center lg:text-end lg:text-5xl leading-tight font-semibold text-zinc-100">
                 Let&apos;s build robust & accessible solutions at the speed of
                 light.
               </div>
@@ -428,7 +428,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-32 w-64">
+                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
                     <Image
                       layout="fill"
                       alt="pocketpr screenshot"
@@ -465,7 +465,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-32 w-64">
+                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
                     <Image
                       layout="fill"
                       alt="pocketpr screenshot"
@@ -502,7 +502,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-32 w-64">
+                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
                     <Image
                       layout="fill"
                       alt="pocketpr screenshot"
@@ -539,7 +539,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-32 w-64">
+                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
                     <Image
                       layout="fill"
                       alt="pocketpr screenshot"
@@ -568,11 +568,11 @@ export default function Home() {
               type: "spring",
               duration: 0.8,
             }}
-            className="p-8 grid grid-cols-1 2xl:grid-cols-2  rounded-3xl bg-zinc-800"
+            className="p-4 sm:p-8 grid grid-cols-1 2xl:grid-cols-2  rounded-3xl bg-zinc-800"
           >
             <div className="flex justify-start text-md sm:text-2xl lg:text-3xl xl:text-4xl 2xl:items-center mx-auto font-semibold">
               Interested in working{" "}
-              <span className="text-red-500  pl-0.5 lg:pl-1 xl:pl-2">
+              <span className="text-red-500  pl-1 lg:pl-1 xl:pl-2">
                 {" "}
                 together?
               </span>
@@ -581,7 +581,7 @@ export default function Home() {
             <motion.div whileHover={{ scale: 0.9 }}>
               <Link
                 href="mailto:recruitme@danielojohnson.com"
-                className="flex justify-center text-md sm:text-2xl lg:text-3xl xl:text-4xl text-red-500  rounded-3xl py-4 px-12 bg-zinc-100  transition-colors font-semibold"
+                className="flex justify-center text-sm sm:text-2xl lg:text-3xl xl:text-4xl text-red-500  rounded-3xl py-4 bg-zinc-100  transition-colors font-semibold"
               >
                 recruitme@danielojohnson.com
               </Link>
@@ -604,11 +604,11 @@ export default function Home() {
         >
           <Link
             href="/"
-            className="pl-4 text-lg sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 hover:text-white transition-colors font-semibold"
+            className="pl-4 text-md sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 hover:text-white transition-colors font-semibold"
           >
             daniel <span className="text-red-500 pl-0.5"> j.</span>
           </Link>
-          <div className="pr-4 text-lg sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 transition-colors font-semibold">
+          <div className="pr-4 text-md sm:text-2xl md:text-3xl 2xl:text-4xl text-zinc-100 transition-colors font-semibold">
             Let&apos;s <span className="text-red-500">cook.</span>
           </div>
         </motion.div>
