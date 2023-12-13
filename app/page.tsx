@@ -364,7 +364,7 @@ export default function Home() {
         <div className="py-2" />
 
         {/* ------------------------------------PROJECTS------------------------------------ */}
-        <div className="flex flex-col lg:flex-row px-4 lg:px-0">
+        <div className="flex flex-col xl:flex-row px-4 lg:px-0 w-full">
           {/*PocketPR Card*/}
           <Link href="/">
             <motion.div
@@ -401,9 +401,9 @@ export default function Home() {
           </Link>
           {/*End PocketPR Card*/}
           <div className="px-2" />
-          <div className="py-2 lg:hidden" />
+          <div className="py-2 xl:hidden" />
           {/*Projects & Blog Grid*/}
-          <div className="grid grid-col lg:grid-cols-2 gap-4 lg:w-full">
+          <div className="grid grid-col xl:grid-cols-2 gap-4 lg:w-full">
             <Link href="/">
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
