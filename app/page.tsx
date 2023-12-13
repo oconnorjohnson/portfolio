@@ -160,12 +160,11 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: "some" }}
+            viewport={{ once: true, amount: "all" }}
             transition={{
               ease: "easeIn",
               type: "spring",
               duration: 0.8,
-              delay: 0.4,
             }}
             className="hidden md:flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12"
           >
@@ -191,7 +190,6 @@ export default function Home() {
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 1.0,
                 }}
                 className="bg-zinc-800 transition-colors  flex flex-row justify-center text-center px-4 sm:px-10 md:px-24 text-2xl font-bold text-zinc-100 rounded-3xl py-6 w-full"
               >
@@ -217,7 +215,6 @@ export default function Home() {
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 1.5,
                 }}
                 className="bg-zinc-800 flex flex-row justify-center transition-colors text-center px-4 sm:px-10 md:px-24 text-2xl font-bold   text-zinc-100 rounded-3xl py-6 w-full"
               >
@@ -244,7 +241,6 @@ export default function Home() {
                 ease: "easeIn",
                 type: "spring",
                 duration: 0.8,
-                delay: 0,
               }}
               className="flex bg-zinc-800 text-center flex-col justify-center rounded-3xl md:w-1/3 p-10 md:p-12 md:hidden"
             >
@@ -267,7 +263,6 @@ export default function Home() {
                 ease: "easeIn",
                 type: "spring",
                 duration: 0.8,
-                delay: 0,
               }}
               className="bg-zinc-800 rounded-3xl p-10 md:p-12"
             >
@@ -301,7 +296,6 @@ export default function Home() {
                 ease: "easeIn",
                 type: "spring",
                 duration: 0.8,
-                delay: 0,
               }}
               className="py-8 px-4 md:p-12 w-full min-w-full rounded-3xl bg-zinc-800 flex flex-col items-center"
             >
@@ -364,8 +358,8 @@ export default function Home() {
                 ease: "easeIn",
                 type: "spring",
                 duration: 0.8,
-                delay: 0,
               }}
+              whileHover={{ scale: 0.9 }}
               className="flex flex-col bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
             >
               <div className="flex flex-row">
@@ -401,8 +395,8 @@ export default function Home() {
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 0,
                 }}
+                whileHover={{ scale: 0.9 }}
                 className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
               >
                 <div className="flex flex-row">
@@ -431,15 +425,15 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, y: "10%" }}
+                initial={{ opacity: 0, y: "-10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 0.3,
                 }}
+                whileHover={{ scale: 0.9 }}
                 className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
               >
                 <div className="flex flex-row">
@@ -475,8 +469,8 @@ export default function Home() {
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 0,
                 }}
+                whileHover={{ scale: 0.9 }}
                 className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
               >
                 <div className="flex flex-row">
@@ -505,15 +499,15 @@ export default function Home() {
             </Link>
             <Link href="/">
               <motion.div
-                initial={{ opacity: 0, y: "10%" }}
+                initial={{ opacity: 0, y: "-10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: "all" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
                   duration: 0.8,
-                  delay: 0.3,
                 }}
+                whileHover={{ scale: 0.9 }}
                 className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
               >
                 <div className="flex flex-row">
@@ -550,12 +544,11 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: "some" }}
+            viewport={{ once: true, amount: "all" }}
             transition={{
               ease: "easeIn",
               type: "spring",
               duration: 0.8,
-              delay: 0.2,
             }}
             className="p-8 grid grid-cols-1 md:grid-cols-2 text-md md:text-3xl rounded-3xl bg-zinc-800"
           >
@@ -584,7 +577,6 @@ export default function Home() {
             ease: "easeIn",
             type: "spring",
             duration: 0.8,
-            delay: 0.4,
           }}
           className="mx-4 lg:mx-0 p-4 flex justify-between rounded-3xl bg-zinc-800"
         >
