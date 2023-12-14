@@ -117,8 +117,8 @@ export default function Llm() {
               PocketPR has been my passion project for the past 10 months. What
               we&apos;ve built so far is just the beginning. First, I&apos;ll
               talk some sh*t about something that a lot of developer&apos;s and
-              I did in the first half of 2023. Then, I'll share what I learned
-              in the process.{" "}
+              I did in the first half of 2023. Then, I&apos;ll share what I
+              learned in the process.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
