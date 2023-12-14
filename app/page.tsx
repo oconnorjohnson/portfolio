@@ -145,9 +145,11 @@ export default function Home() {
               Got a <span className="text-red-500">problem?</span>
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
-              <button className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
-                Get In Touch
-              </button>
+              <Link href="mailto:recruitme@danielojohnson.com">
+                <a className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
+                  Get In Touch
+                </a>
+              </Link>
             </motion.div>
           </div>
 
