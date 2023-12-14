@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { HiMenu } from "react-icons/hi";
 
