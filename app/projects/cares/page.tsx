@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { HiMenu } from "react-icons/hi";
+import Image from "next/image";
 
-export default function Cares() {
+export default function Llm() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -87,6 +88,10 @@ export default function Cares() {
             </motion.div>
           )}
         </AnimatePresence>
+        {/*---------HEADER-----------*/}
+        <div className="flex flex-col rounded-3xl text-zinc-100">
+          <div className="py-2" />
+        </div>
       </main>
     </>
   );

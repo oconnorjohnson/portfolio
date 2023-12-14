@@ -105,7 +105,9 @@ export default function Llm() {
             </div>
           </div>
           <div className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10">
-            <h1 className="text-3xl font-semibold">Introduction</h1>
+            <h1 className="text-3xl font-semibold text-red-500">
+              Introduction
+            </h1>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">
               PocketPR has been my passion project for the past 10 months. What
@@ -124,7 +126,9 @@ export default function Llm() {
               product) that Google could (and would) bake directly into YouTube.
             </p>
             <div className="py-4" />
-            <h1 className="text-3xl font-semibold">Building Long-Term Value</h1>
+            <h1 className="text-3xl font-semibold text-red-500">
+              Building Long-Term Value
+            </h1>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">
               Now, PocketPR was <i>never supposed to be just that.</i> The base
@@ -174,7 +178,7 @@ export default function Llm() {
               className="rounded-3xl p-1"
             />
             <div className="py-4" />
-            <h1 className="text-3xl font-semibold">Our Future</h1>
+            <h1 className="text-3xl font-semibold text-red-500">Our Future</h1>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">
               So we broke down the goal of the product into a network of

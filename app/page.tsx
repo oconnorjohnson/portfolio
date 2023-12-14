@@ -366,7 +366,7 @@ export default function Home() {
         {/* ------------------------------------PROJECTS------------------------------------ */}
         <div className="flex flex-col px-4 lg:px-0 w-full">
           {/*PocketPR Card*/}
-          <Link href="/">
+          <Link href="/projects/pocket">
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -390,12 +390,11 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                layout="responsive"
-                width="723"
-                height="937"
+                src="/pocketpr.png"
+                width="2000"
+                height="1250"
                 alt="pocketpr screenshot"
                 className="rounded-3xl object-cover"
-                src="/pocketpr.png"
               />
             </motion.div>
           </Link>
@@ -427,20 +426,17 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
-                    <Image
-                      layout="fill"
-                      alt="pocketpr screenshot"
-                      className="rounded-xl"
-                      src="/systems.png"
-                      objectFit="cover"
-                      objectPosition="center"
-                    />
-                  </div>
+                  <Image
+                    alt="pocketpr screenshot"
+                    className="rounded-xl"
+                    src="/systems.png"
+                    width="2000"
+                    height="1250"
+                  />
                 </div>
               </motion.div>
             </Link>
-            <Link href="/">
+            <Link href="/projects/cares">
               <motion.div
                 initial={{ opacity: 0, y: "-10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -464,16 +460,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
-                    <Image
-                      layout="fill"
-                      alt="pocketpr screenshot"
-                      className="rounded-xl"
-                      src="/cares.png"
-                      objectFit="cover"
-                      objectPosition="center"
-                    />
-                  </div>
+                  <Image
+                    alt="pocketpr screenshot"
+                    className="rounded-xl"
+                    src="/cares.png"
+                    width="2000"
+                    height="1250"
+                  />
                 </div>
               </motion.div>
             </Link>
