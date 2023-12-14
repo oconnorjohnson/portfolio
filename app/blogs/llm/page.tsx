@@ -88,7 +88,7 @@ export default function Llm() {
             </motion.div>
           )}
         </AnimatePresence>
-        {/*---------HEADER-----------*/}
+        {/*---------HEADER----------*/}
         <div className="flex mx-4 lg:mx-0 flex-col rounded-3xl text-zinc-100">
           <div className="flex flex-col xl:flex-row w-full">
             <div
