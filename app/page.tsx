@@ -59,7 +59,7 @@ export default function Home() {
     <>
       <main className="mx-auto lg:w-3/4 2xl:w-2/3 overflow-x-hidden">
         {/* ------------------------------------NAVBAR------------------------------------ */}
-        <div className="mt-8 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-800">
+        <div className="mt-4 mx-4 lg:mx-0 p-4 flex justify-between grid-col-3 rounded-3xl bg-zinc-800">
           <Link
             href="/"
             className="pl-4 text-2xl text-zinc-100 hover:text-red-500 transition-colors font-semibold"
