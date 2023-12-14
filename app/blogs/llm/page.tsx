@@ -164,20 +164,20 @@ export default function Llm() {
               PocketPR?
             </p>
             <div className="py-2" />
-            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-12">
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-4 xl:pl-12">
               1. Hundreds of hours experimenting with ChatGPT. Main takeaways:
               the quality of output is proportional to the amount of context,
               and inversely proportional to the complexity & size of the task at
               hand.
             </p>
             <div className="py-2" />
-            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-12">
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-4 xl:pl-12">
               2. Function calling released. Consistently receive JSON to call
               traditional code? Now we&apos;re starting to see a path towards
               controlled autonomy.
             </p>
             <div className="py-2" />
-            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-12">
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light pl-4 xl:pl-12">
               3. Assistants API released. From a logistics perspective, this
               didn&apos;t enable anything, but it certainly made the process
               easier. More importantly, it made us rethink how we viewed
@@ -247,8 +247,45 @@ export default function Llm() {
               but allows for a recursive solution where issues can easily be
               attended to via new assistants.
             </p>
+          </motion.div>
+          <div className="py-2" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: "some" }}
+            transition={{
+              ease: "easeIn",
+              type: "spring",
+              duration: 0.8,
+            }}
+            className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10"
+          >
+            <h1 className="text-3xl xl:text-4xl font-semibold text-red-500">
+              Conclusion
+            </h1>
             <div className="py-2" />
-
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              I want to say avoid building with AI entirely, but I think a more
+              appropriate conclusion is: build with AI sparingly. When we work
+              with a principle of minimal AI, we avoid large, catch-all
+              instances of LLM&apos;s that are not only unreliable but set us up
+              for a quick offramp from growth to irrelevance. We no longer
+              understand LLM&apos;s as single-instance implementations, but
+              highly flexible, multi-instance components of a greater system.
+              Also, advice is great, but take it with the smallest grain of
+              salt! Even if PocketPR dies tomorrow, the time and effort
+              I&apos;ve invested have taught me more than any schooling or
+              personal studying taught me about computer science, startups,
+              leadership, and the tech industry. If I&apos;d listened to most
+              people&apos;s advice and spent that time simply studying, I&apos;d
+              be far behind where I am today. So if you have an idea, get after
+              it! F*ck it up, learn something, and repeat.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              Stay based and hug more trees.
+            </p>
+            <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
               - Daniel
             </p>
