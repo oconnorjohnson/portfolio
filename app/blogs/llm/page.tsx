@@ -125,7 +125,19 @@ export default function Llm() {
               still rather value-less. We had built a feature (rather than a
               product) that Google could (and would) bake directly into YouTube.
             </p>
-            <div className="py-4" />
+          </div>
+          <div className="py-2" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{
+              ease: "easeIn",
+              type: "spring",
+              duration: 0.8,
+            }}
+            className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10"
+          >
             <h1 className="text-3xl font-semibold text-red-500">
               Building Long-Term Value
             </h1>
@@ -167,9 +179,23 @@ export default function Llm() {
               easier. More importantly, it made me rethink how I viewed
               applications with AI functionality.
             </p>
-
-            <div className="py-4" />
-
+          </motion.div>
+          <div className="py-2" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{
+              ease: "easeIn",
+              type: "spring",
+              duration: 0.8,
+            }}
+            className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10"
+          >
+            <h1 className="text-3xl font-semibold text-red-500">
+              Wrappers vs. Armies
+            </h1>
+            <div className="py-2" />
             <Image
               src="/diagram1.png"
               width="2000"
@@ -177,16 +203,28 @@ export default function Llm() {
               alt="diagram comparing GPT wrappers and LLM armies"
               className="rounded-3xl p-1"
             />
-            <div className="py-4" />
+          </motion.div>
+          <div className="py-2" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{
+              ease: "easeIn",
+              type: "spring",
+              duration: 0.8,
+            }}
+            className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10"
+          >
             <h1 className="text-3xl font-semibold text-red-500">Our Future</h1>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">
               So we broke down the goal of the product into a network of
               single-task assistants and traditional code functions. Rather than
-              writing off 99% of the product&apos;s labor to an external API,
-              deploy LLM technology only where it enables that which isn&apos;t
-              possible without it. As language models, use them where you need
-              language understanding.{" "}
+              writing off 99% of the product&apos;s labor to an external API, we
+              chose to deploy LLM technology only where it enabled that which
+              wasn&apos;t possible without it. As language models, we use them
+              where we need language understanding.{" "}
             </p>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">
@@ -201,7 +239,7 @@ export default function Llm() {
               This is only one example of how subdividing your language-needs
               into many small-task-based models as opposed to one large
               catch-all model not only increases overall capabilities but allows
-              for a recrusive solution where issues can easily be attended to
+              for a recursive solution where issues can easily be attended to
               via new task-models.{" "}
             </p>
             <div className="py-2" />
@@ -211,7 +249,7 @@ export default function Llm() {
             </p>
             <div className="py-2" />
             <p className="text-2xl leading-relaxed font-light">- Daniel</p>
-          </div>
+          </motion.div>
           <div className="py-2" />
         </div>
       </main>
