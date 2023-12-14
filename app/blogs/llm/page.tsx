@@ -32,14 +32,14 @@ export default function Llm() {
 
           <div className="hidden lg:flex lg:justify-end">
             <Link
-              href="#"
+              href="https://docs.google.com/document/d/1VNWHIbHKd7V-TEPVEcQU3SN8tHk1zwR5/edit?usp=sharing&ouid=116859036091790316317&rtpof=true&sd=true"
               className="pr-8 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
-              works
+              resume
             </Link>
 
             <Link
-              href="#"
+              href="mailto:recruitme@danielojohnson.com"
               className="pr-4 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
               contact
@@ -74,13 +74,13 @@ export default function Llm() {
                 <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
               </button>
               <Link
-                href="#"
+                href="https://docs.google.com/document/d/1VNWHIbHKd7V-TEPVEcQU3SN8tHk1zwR5/edit?usp=sharing&ouid=116859036091790316317&rtpof=true&sd=true"
                 className="text-6xl py-4 text-zinc-100 transition-colors  font-bold"
               >
-                works
+                resume
               </Link>
               <Link
-                href="#"
+                href="mailto:recruitme@danielojohnson.com"
                 className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
               >
                 contact

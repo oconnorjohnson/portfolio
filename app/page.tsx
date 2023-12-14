@@ -69,14 +69,14 @@ export default function Home() {
 
           <div className="hidden lg:flex lg:justify-end">
             <Link
-              href="#"
+              href="https://docs.google.com/document/d/1VNWHIbHKd7V-TEPVEcQU3SN8tHk1zwR5/edit?usp=sharing&ouid=116859036091790316317&rtpof=true&sd=true"
               className="pr-8 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
-              works
+              resume
             </Link>
 
             <Link
-              href="#"
+              href="mailto:recruitme@danielojohnson.com"
               className="pr-4 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
               contact
@@ -111,13 +111,13 @@ export default function Home() {
                 <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
               </button>
               <Link
-                href="#"
+                href="https://docs.google.com/document/d/1VNWHIbHKd7V-TEPVEcQU3SN8tHk1zwR5/edit?usp=sharing&ouid=116859036091790316317&rtpof=true&sd=true"
                 className="text-6xl py-4 text-zinc-100 transition-colors  font-bold"
               >
-                works
+                resume
               </Link>
               <Link
-                href="#"
+                href="mailto:recruitme@danielojohnson.com"
                 className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
               >
                 contact
@@ -366,7 +366,7 @@ export default function Home() {
         {/* ------------------------------------PROJECTS------------------------------------ */}
         <div className="flex flex-col px-4 lg:px-0 w-full">
           {/*PocketPR Card*/}
-          <Link href="/projects/pocket">
+          <Link href="https://pocketpr.app">
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -431,12 +431,12 @@ export default function Home() {
                     className="rounded-xl"
                     src="/systems.png"
                     width="2000"
-                    height="1250"
+                    height="1000"
                   />
                 </div>
               </motion.div>
             </Link>
-            <Link href="/projects/cares">
+            <Link href="https://yolopublicdefendercares.org">
               <motion.div
                 initial={{ opacity: 0, y: "-10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -465,7 +465,7 @@ export default function Home() {
                     className="rounded-xl"
                     src="/cares.png"
                     width="2000"
-                    height="1250"
+                    height="1000"
                   />
                 </div>
               </motion.div>
