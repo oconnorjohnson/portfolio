@@ -88,7 +88,7 @@ export default function Llm() {
           )}
         </AnimatePresence>
         {/*---------HEADER-----------*/}
-        <div className="flex flex-col text-6xl font-semibold rounded-3xl my-4">
+        <div className="flex flex-col text-6xl font-semibold rounded-3xl">
           <div className="flex flex-row w-full">
             <div
               className="flex flex-col p-10 bg-zinc-800 text-6xl font-semibold items-center rounded-3xl my-4"
