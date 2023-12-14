@@ -87,6 +87,23 @@ export default function Llm() {
             </motion.div>
           )}
         </AnimatePresence>
+        {/*---------HEADER-----------*/}
+        <div className="flex flex-col text-6xl font-semibold rounded-3xl my-4">
+          <div className="flex flex-row w-full">
+            <div
+              className="flex flex-col p-10 bg-zinc-800 text-6xl font-semibold items-center rounded-3xl my-4"
+              style={{ display: "inline-block" }}
+            >
+              LLM <span className="text-red-500">Armies</span>
+            </div>
+            <div className="px-2" />
+            <div className="flex items-center justify-start p-10 bg-zinc-800 text-2xl font-semibold rounded-3xl my-4 w-full">
+              How my team and I are building
+              <span className="text-red-500 px-2"> autonomous </span> public
+              relations agents.
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
