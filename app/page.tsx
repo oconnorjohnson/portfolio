@@ -364,7 +364,7 @@ export default function Home() {
         <div className="py-2" />
 
         {/* ------------------------------------PROJECTS------------------------------------ */}
-        <div className="flex flex-col xl:flex-row px-4 lg:px-0 w-full">
+        <div className="flex flex-col px-4 lg:px-0 w-full">
           {/*PocketPR Card*/}
           <Link href="/">
             <motion.div
@@ -400,8 +400,7 @@ export default function Home() {
             </motion.div>
           </Link>
           {/*End PocketPR Card*/}
-          <div className="px-2" />
-          <div className="py-2 xl:hidden" />
+          <div className="py-2" />
           {/*Projects & Blog Grid*/}
           <div className="grid grid-col xl:grid-cols-2 gap-4 lg:w-full">
             <Link href="/">
@@ -420,10 +419,10 @@ export default function Home() {
                 <div className="flex flex-row">
                   <div className="flex flex-col">
                     <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
-                      Blog Post One
+                      LLM Armies
                     </h1>
                     <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
-                      Co-Founder & CEO
+                      My first blog post!
                     </h2>
                   </div>
                 </div>
@@ -471,80 +470,6 @@ export default function Home() {
                       alt="pocketpr screenshot"
                       className="rounded-xl"
                       src="/cares.png"
-                      objectFit="cover"
-                      objectPosition="center"
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-            <Link href="/">
-              <motion.div
-                initial={{ opacity: 0, y: "10%" }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
-                transition={{
-                  ease: "easeIn",
-                  type: "spring",
-                  duration: 0.8,
-                }}
-                whileHover={{ scale: 0.9 }}
-                className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
-              >
-                <div className="flex flex-row">
-                  <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
-                      Portfolio
-                    </h1>
-                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
-                      Co-Founder & CEO
-                    </h2>
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
-                    <Image
-                      layout="fill"
-                      alt="pocketpr screenshot"
-                      className="rounded-xl"
-                      src="/portfolio.png"
-                      objectFit="cover"
-                      objectPosition="center"
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-            <Link href="/">
-              <motion.div
-                initial={{ opacity: 0, y: "-10%" }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
-                transition={{
-                  ease: "easeIn",
-                  type: "spring",
-                  duration: 0.8,
-                }}
-                whileHover={{ scale: 0.9 }}
-                className="bg-zinc-800 hover:bg-zinc-800 rounded-3xl h-full p-12"
-              >
-                <div className="flex flex-row">
-                  <div className="flex flex-col">
-                    <h1 className="text-zinc-100 font-semibold text-3xl lg:text-4xl">
-                      Blog Post Two
-                    </h1>
-                    <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
-                      Co-Founder & CEO
-                    </h2>
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="relative h-20 w-40 sm:h-28 sm:w-64">
-                    <Image
-                      layout="fill"
-                      alt="pocketpr screenshot"
-                      className="rounded-xl"
-                      src="/embeddings.png"
                       objectFit="cover"
                       objectPosition="center"
                     />
