@@ -146,9 +146,9 @@ export default function Home() {
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
               <Link href="mailto:recruitme@danielojohnson.com">
-                <button className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
+                <div className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
                   Get In Touch
-                </button>
+                </div>
               </Link>
             </motion.div>
           </div>
