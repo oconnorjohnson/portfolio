@@ -455,7 +455,7 @@ export default function Home() {
                       CARES
                     </h1>
                     <h2 className="font-ultralight text-xl lg:text-2xl pt-2 pb-4 text-zinc-300">
-                      Co-Founder & CEO
+                      Board Member & Web Developer
                     </h2>
                   </div>
                 </div>
