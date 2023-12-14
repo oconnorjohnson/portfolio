@@ -403,7 +403,7 @@ export default function Home() {
           <div className="py-2" />
           {/*Projects & Blog Grid*/}
           <div className="grid grid-col xl:grid-cols-2 gap-4 lg:w-full">
-            <Link href="/">
+            <Link href="/llm">
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}

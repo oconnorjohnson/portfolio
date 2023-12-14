@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { HiMenu } from "react-icons/hi";
+import Image from "next/image";
 
 export default function Llm() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -88,7 +89,7 @@ export default function Llm() {
           )}
         </AnimatePresence>
         {/*---------HEADER-----------*/}
-        <div className="flex flex-col text-6xl font-semibold rounded-3xl">
+        <div className="flex flex-col rounded-3xl text-zinc-100">
           <div className="flex flex-row w-full">
             <div
               className="flex flex-col p-10 bg-zinc-800 text-6xl font-semibold items-center rounded-3xl my-4"
@@ -102,6 +103,106 @@ export default function Llm() {
               <span className="text-red-500 px-2"> autonomous </span> public
               relations agents.
             </div>
+          </div>
+          <div className="flex flex-col w-full bg-zinc-800 rounded-3xl p-10">
+            <h1 className="text-3xl font-semibold">section1</h1>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              PocketPR has been my passion project for the past 10 months. What
+              we&apos;ve built so far is just the beginning. I&apos;ll talk some
+              sh*t about something that I and a lot of developer&apos;s did in
+              the first half of 2023, and then share what I learned in the
+              process.{" "}
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              GPT Wrapper: A product that wraps a fancy UI around a third-party
+              LLM API and a custom system prompt. While the PocketPR MVP had a
+              lot more going on in order to provide up to 25,000 YouTube
+              comments to the GPT-4 API, the base was still rather value-less.
+              We had built a feature (rather than a product) that Google could
+              (and would) bake into YouTube directly.
+            </p>
+            <div className="py-2" />
+            <h1 className="text-3xl font-semibold">section2</h1>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              Now, PocketPR was never supposed to be just that. The base idea
+              was to build an autonomous, cross-platform PR assistant for
+              content creators, influencers, businesses, and ultimately
+              everybody. But exactly how we would achieve that wasn&apos;t
+              always clear. It took a lot of sleepless nights, staring at
+              failure, to get to where we are now.{" "}
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              There were a few crucial points that accumulated to produce our
+              current architecture, and without deluging so much that my CTO
+              fires me, I want to lay out how we&apos;ve changed our
+              perspectives on building products on-top of the OpenAI API. (Or,
+              ideally, around it.) So, what helped us design a foundation for
+              the longevity of PocketPR? There were 3 notable points:
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light pl-12">
+              1. Hundreds of hours experimenting with ChatGPT. The most
+              important lesson: the quality of output is proportional to the
+              amount of context, and inversely proportional to the complexity &
+              size of the task at hand.
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light pl-12">
+              2. Function calling released. Consistently receive JSON to call
+              traditional code? Now we&apos;re starting to see a path towards
+              controlled autonomy.
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light pl-12">
+              3. Assistants API released. From a logistics perspective, this
+              didn&apos;t enable anything, but it certainly made the process
+              easier. More importantly, it made me rethink how I viewed
+              applications with AI functionality.
+            </p>
+
+            <div className="py-2" />
+
+            <Image
+              src="/diagram1.png"
+              width="2000"
+              height="2000"
+              alt="diagram comparing GPT wrappers and LLM armies"
+              className="rounded-3xl p-1"
+            />
+            <div className="py-2" />
+            <h1 className="text-3xl font-semibold">section2</h1>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              So we broke down the goal of the product into a network of
+              single-task assistants and traditional code functions. Rather than
+              writing off 99% of the product&apos;s labor to an external API,
+              deploy LLM technology only where it enables that which isn&apos;t
+              possible without it. As language models, use them where you need
+              language understanding.{" "}
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl font-light">
+              The last thing I want to touch on is the safety guards that are
+              enabled by this approach. Let&apos;s take for example an assistant
+              that is asked to search a browser API based on a provided string
+              of context (which would be passed from a previous assistant). With
+              a task-based approach, we can easily add additional assistants
+              following the search assistant who are instructed to say, check
+              the relevance of the search results to the topic at hand, or to
+              run a second and third browser search to fact-check the original
+              result.{" "}
+            </p>
+            <div className="py-1" />
+            <p className="text-2xl font-light">
+              More to come on this and much more very soon. I wanted to get this
+              out so I could beat my CTO in our race to publish our first blog
+              posts by the New Year.
+            </p>
+            <div className="py-2" />
           </div>
         </div>
       </main>
