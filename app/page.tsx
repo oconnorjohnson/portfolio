@@ -36,7 +36,7 @@ export default function Home() {
     },
     {
       quote:
-        "This is going to be a nice quote from Keegan. He works at PocketPR!",
+        "I highly value Daniel's planning & engineering abilities. He's fun to work with & moves fluidly across the tech stack!",
       name: "Keegan Anglim",
       position: "Co-Founder & CTO",
       company: "PocketPR",
@@ -402,7 +402,7 @@ export default function Home() {
           <div className="py-2" />
           {/*Projects & Blog Grid*/}
           <div className="grid grid-col xl:grid-cols-2 gap-4 lg:w-full">
-            <Link href="/llm">
+            <Link href="/blogs/llm">
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
