@@ -29,7 +29,7 @@ export default function Home() {
   const testimonials = [
     {
       quote:
-        "This is going to be a nice quote from Kevin. He works at Apple! Cool.",
+        "Daniel is an inventive, enthusiastic worker who puts his creative talents into every project he works on. He is an excellent communicator and has the right positive attitude to make him a great collaborator when you need to get complex projects done.",
       name: "Kevin Carney",
       position: "Software QA Engineer",
       company: "Apple, Inc.",
