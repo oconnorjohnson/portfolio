@@ -129,7 +129,7 @@ export default function Home() {
         <div className="lg:flex lg:flex-row lg:justify-between px-4 lg:px-0">
           {/*Hero Card*/}
           <div className="bg-zinc-800 my-4 flex flex-col justify-between rounded-3xl lg:w-2/3 p-10 lg:px-16 lg:py-20">
-            <div className="text-3xl lg:text-4xl xl:text-5xl pb-6 sm:pb-8 xl:pb-0 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
+            <div className="text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl pb-6 sm:pb-8 xl:pb-0 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
               Looking for a <span className="text-red-500">solution?</span>
             </div>
             <div className="text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl text-start sm:text-center lg:text-start font-bold text-zinc-100">
