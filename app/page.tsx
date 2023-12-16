@@ -75,12 +75,12 @@ export default function Home() {
               resume
             </Link>
 
-            <Link
+            <a
               href="mailto:recruitme@danielojohnson.com"
               className="pr-4 text-2xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
               contact
-            </Link>
+            </a>
           </div>
 
           <motion.button
@@ -116,12 +116,12 @@ export default function Home() {
               >
                 resume
               </Link>
-              <Link
+              <a
                 href="mailto:recruitme@danielojohnson.com"
                 className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
               >
                 contact
-              </Link>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
@@ -145,11 +145,9 @@ export default function Home() {
               Got a <span className="text-red-500">problem?</span>
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
-              <button className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
-                <Link href="mailto:recruitme@danielojohnson.com">
-                  Get In Touch
-                </Link>
-              </button>
+              <div className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
+                <a href="mailto:recruitme@danielojohnson.com">Get In Touch</a>
+              </div>
             </motion.div>
           </div>
 
@@ -499,12 +497,12 @@ export default function Home() {
             </div>
             <div className="py-2 2xl:hidden" />
             <motion.div whileHover={{ scale: 0.9 }}>
-              <Link
+              <a
                 href="mailto:recruitme@danielojohnson.com"
                 className="flex justify-center text-sm sm:text-2xl lg:text-3xl xl:text-4xl text-red-500  rounded-3xl py-4 bg-zinc-100  transition-colors font-semibold"
               >
                 recruitme@danielojohnson.com
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         </div>
