@@ -38,12 +38,12 @@ export default function Llm() {
               resume
             </Link>
 
-            <Link
+            <a
               href="mailto:recruitme@danielojohnson.com"
               className="pr-4 text-2xl xl:text-3xl text-zinc-100 hover:text-red-500 transition-colors  font-semibold"
             >
               contact
-            </Link>
+            </a>
           </div>
 
           <motion.button
@@ -79,12 +79,12 @@ export default function Llm() {
               >
                 resume
               </Link>
-              <Link
+              <a
                 href="mailto:recruitme@danielojohnson.com"
                 className="text-6xl py-4 pb-10 text-zinc-100 transition-colors  font-bold"
               >
                 contact
-              </Link>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
