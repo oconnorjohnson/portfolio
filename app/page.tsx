@@ -292,7 +292,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true, amount: "some" }}
               transition={{
                 ease: "easeIn",
                 type: "spring",

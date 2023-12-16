@@ -117,7 +117,10 @@ export default function Llm() {
               <a className="font-bold">PocketPR</a> has been my passion project
               for the past year. What we&apos;ve built so far is and always was
               just the beginning. But as these things go, we weren&apos;t quite
-              sure of <a className="font-bold">the path forward</a>.
+              sure of the right <a className="font-bold">path forward</a>. While
+              we&apos;ve barely scratched the surface of learning, I wanted to
+              take a moment to reflect in hopes of organizing my own thoughts
+              and practicing my writing skills while I&apos;m at it.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
@@ -126,18 +129,17 @@ export default function Llm() {
               process.
             </p>
             <div className="py-2" />
-            <p className="text-2xl xl:text-3xl leading-relaxed font-bold px-4">
+            <p className="text-2xl xl:text-3xl leading-relaxed font-bold px-4 md:px-8 lg:px-12">
               {" "}
               GPT Wrapper: A product that wraps a fancy UI around a third-party
               LLM API and a custom &quot;system prompt&quot;.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
-              While the PocketPR MVP had additional layers of complexity due to
-              both the management of sensitive user data from third-party API's
-              as well as the storing and retrieval of vector representations of
-              said user data for custom-knowledge retrieval for each user's
-              chatbot, the base was still rather value-less.
+              My tendency is to argue that due to the MVP&apos;s additional
+              layers of complexity, it&apos;s somehow in a{" "}
+              <a className="font-bold">league of it&apos;s own</a>. The reality
+              is, the base was still rather value-less.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
@@ -163,12 +165,17 @@ export default function Llm() {
             </h1>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
-              Now, PocketPR was <i>never supposed to be just that.</i> The base
-              idea was to build an autonomous, cross-platform PR assistant for
+              Well, PocketPR was never supposed to be just a
+              &quot;GPT-Wrapper&quot;. The idea was to build an autonomous,{" "}
+              <a className="font-bold">cross-platform PR assistant</a> for
               content creators, influencers, businesses, and ultimately
-              everybody. Exactly how we would achieve that wasn&apos;t always
-              clear... You know how it goes; it took a lot of sleepless nights
-              to get to where we are now.{" "}
+              everybody.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              Exactly how we would achieve that wasn&apos;t always clear... You
+              know how it goes; it took a <a className="font-bold">lot</a> of
+              sleepless nights to get to where we are now.{" "}
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
@@ -282,20 +289,28 @@ export default function Llm() {
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
               I want to say avoid building with AI entirely, but I think a more
-              appropriate conclusion is: build with AI sparingly. When we work
-              with a principle of minimal AI, we avoid large, catch-all
-              instances of LLM&apos;s that are not only unreliable but set us up
-              for a quick offramp from growth to irrelevance. We no longer
-              understand LLM&apos;s as single-instance implementations, but
-              highly flexible, multi-instance components of a greater system.
-              Also, advice is great, but take it with the smallest grain of
-              salt! Even if PocketPR dies tomorrow, the time and effort
-              I&apos;ve invested have taught me more than any schooling or
-              personal studying taught me about computer science, startups,
-              leadership, and the tech industry. If I&apos;d listened to most
-              people&apos;s advice and spent that time simply studying, I&apos;d
-              be far behind where I am today. So if you have an idea, get after
-              it! F*ck it up, learn something, and repeat.
+              appropriate conclusion is:{" "}
+              <a className="font-bold">
+                build with AI <i>sparingly</i>
+              </a>
+              . When we work with a principle of minimal AI, we avoid large,
+              catch-all instances of LLM&apos;s that are not only unreliable but
+              set us up for a quick offramp from growth to irrelevance. We no
+              longer understand LLM&apos;s as single-instance implementations,
+              but highly flexible, multi-instance components of a greater
+              system.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              Also, advice is great, but take it with the{" "}
+              <a className="font-bold">smallest</a> grain of salt! Even if
+              PocketPR dies tomorrow, the time and effort I&apos;ve invested
+              have taught me more than any schooling or personal studying taught
+              me about computer science, startups, leadership, and the tech
+              industry. If I&apos;d listened to most people&apos;s advice and
+              spent that time simply studying, I&apos;d be far behind where I am
+              today. So if you have an idea, get after it! F*ck it up, learn
+              something, and repeat.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
