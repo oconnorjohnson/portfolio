@@ -132,6 +132,7 @@ export default function Home() {
             <div className="text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl pb-6 sm:pb-8 xl:pb-0 text-start sm:text-center lg:text-start font-extralight text-zinc-300">
               Looking for a <span className="text-red-500">solution?</span>
             </div>
+            <div className="hidden xl:block xl:py-2" />
             <div className="text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl text-start sm:text-center lg:text-start font-bold text-zinc-100">
               I&apos;m a full-stack{" "}
               <span className="text-red-500">problem-solver.</span>
@@ -145,7 +146,7 @@ export default function Home() {
               Got a <span className="text-red-500">problem?</span>
             </div>
             <motion.div whileHover={{ scale: 0.9 }}>
-              <div className="text-3xl lg:text-4xl xl:text-5xl bg-zinc-100 my-10 transition-colors p-8 rounded-3xl  font-bold text-zinc-800">
+              <div className="text-xl lg:text-4xl xl:text-5xl bg-zinc-100 my-6 transition-colors p-4 sm:p-8 rounded-3xl  font-bold text-zinc-800">
                 <a href="mailto:recruitme@danielojohnson.com">Get In Touch</a>
               </div>
             </motion.div>
