@@ -31,7 +31,7 @@ export default function Home() {
       quote:
         "This is going to be a nice quote from Kevin. He works at Apple! Cool.",
       name: "Kevin Carney",
-      position: "QA Engineer",
+      position: "Software QA Engineer",
       company: "Apple, Inc.",
     },
     {

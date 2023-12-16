@@ -114,20 +114,36 @@ export default function Llm() {
             </h1>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
-              PocketPR has been my passion project for the past 10 months. What
-              we&apos;ve built so far is just the beginning. First, I&apos;ll
-              talk some sh*t about something that a lot of developers and I did
-              in the first half of 2023. Then, I&apos;ll share what I learned in
-              the process.
+              <a className="font-bold">PocketPR</a> has been my passion project
+              for the past year. What we&apos;ve built so far is and always was
+              just the beginning. But as these things go, we weren&apos;t quite
+              sure of <a className="font-bold">the path forward</a>.
             </p>
             <div className="py-2" />
             <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              First, I&apos;ll discuss some of the mistakes that I made in the
+              first half of 2023, and then I&apos;ll share what I learned in the
+              process.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-bold px-4">
+              {" "}
               GPT Wrapper: A product that wraps a fancy UI around a third-party
-              LLM API and a custom system prompt. While the PocketPR MVP had a
-              lot more going on in order to provide up to 25,000 YouTube
-              comments to a single conversation with the GPT-4 API, the base was
-              still rather value-less. We had built a feature (rather than a
-              product) that Google could (and would) bake directly into YouTube.
+              LLM API and a custom &quot;system prompt&quot;.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              While the PocketPR MVP had additional layers of complexity due to
+              both the management of sensitive user data from third-party API's
+              as well as the storing and retrieval of vector representations of
+              said user data for custom-knowledge retrieval for each user's
+              chatbot, the base was still rather value-less.
+            </p>
+            <div className="py-2" />
+            <p className="text-2xl xl:text-3xl leading-relaxed font-light">
+              We had built a feature (rather than a product) that Google could
+              (and would) bake directly into YouTube. So,{" "}
+              <a className="font-bold"> what next?</a>
             </p>
           </div>
           <div className="py-2" />
