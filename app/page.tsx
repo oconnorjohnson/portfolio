@@ -85,7 +85,7 @@ export default function Home() {
 
           <motion.button
             onClick={toggleSidebar}
-            className="flex justify-end pr-4 text-3xl lg:hidden"
+            className="flex justify-end pr-4 text-3xl text-white lg:hidden"
             whileHover={{ rotate: "180deg" }}
             whileTap={{ scale: 0.9 }}
           >
@@ -107,7 +107,7 @@ export default function Home() {
               }}
               className="z-50 fixed rounded-3xl top-0 left-0 w-full h-full min-w-screen min-h-screen bg-zinc-800 flex flex-col items-start pl-10 pt-24 justify-start"
             >
-              <button onClick={toggleSidebar} className="mb-4">
+              <button onClick={toggleSidebar} className="mb-4 text-white ">
                 <IoIosCloseCircle className="absolute top-8 right-8 text-6xl" />
               </button>
               <Link
@@ -186,7 +186,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
+                viewport={{ once: true, amount: "some" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
@@ -211,7 +211,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
+                viewport={{ once: true, amount: "some" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
@@ -237,7 +237,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true, amount: "some" }}
               transition={{
                 ease: "easeIn",
                 type: "spring",
@@ -259,7 +259,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: "all" }}
+              viewport={{ once: true, amount: "some" }}
               transition={{
                 ease: "easeIn",
                 type: "spring",
@@ -317,7 +317,7 @@ export default function Home() {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.1 }}
-                      className="text-xl sm:text-3xl lg:text-4xl text-center font-semibold leading-snug"
+                      className="text-xl sm:text-3xl lg:text-4xl text-center text-zinc-100 font-semibold leading-snug"
                     >
                       {testimonials[currentTestimonial].quote}
                     </motion.blockquote>
@@ -407,7 +407,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
+                viewport={{ once: true, amount: "some" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
@@ -441,7 +441,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: "-10%" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: "all" }}
+                viewport={{ once: true, amount: "some" }}
                 transition={{
                   ease: "easeIn",
                   type: "spring",
@@ -481,7 +481,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: "all" }}
+            viewport={{ once: true, amount: "some" }}
             transition={{
               ease: "easeIn",
               type: "spring",
@@ -489,7 +489,7 @@ export default function Home() {
             }}
             className="p-4 sm:p-8 grid grid-cols-1 2xl:grid-cols-2  rounded-3xl bg-zinc-800"
           >
-            <div className="flex justify-start text-md sm:text-2xl lg:text-3xl xl:text-4xl 2xl:items-center mx-auto font-semibold">
+            <div className="flex justify-start text-md sm:text-2xl lg:text-3xl text-zinc-100 xl:text-4xl 2xl:items-center mx-auto font-semibold">
               Interested in working{" "}
               <span className="text-red-500  pl-1 lg:pl-1 xl:pl-2">
                 {" "}
@@ -513,7 +513,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true, amount: "some" }}
           transition={{
             ease: "easeIn",
             type: "spring",
